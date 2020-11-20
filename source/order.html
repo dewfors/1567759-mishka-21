@@ -3,44 +3,56 @@
 <head>
   <meta charset="utf-8">
   <title>Магазин Мишка - форма заказа</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="page__body">
+
 <header class="page-header">
-  <h1 class="visually-hidden">Магазин изделий ручной работы "Мишка": форма для заказа</h1>
-  <div class="page-header__wrapper">
-    <a class="page-header__logo logo">
-      <img src="https://via.placeholder.com/86x35" width="86" height="35" alt="Логотип магазина Мишка">
-    </a>
-    <nav class="main-nav">
-      <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-      <ul class="main-nav__list site-list">
-        <li class="site-list__item">
-          <a href="catalog.html">Главная</a>
-        </li>
-        <li class="site-list__item">
-          <a href="order.html">Вязание на заказ</a>
-        </li>
-      </ul>
-      <ul class="main-nav__list user-list">
-        <li class="user-list__item">
-          <a href="#">Поиск по сайту</a>
-        </li>
-        <li class="user-list__item">
-          <a href="#">Корзина: пока пуста</a>
-        </li>
-      </ul>
-      <ul class="main-nav__list site-list">
-        <li class="site-list__item">
-          <a href="#">Новые поступления</a>
-        </li>
-        <li class="site-list__item">
-          <a href="#">Распродажа</a>
-        </li>
-      </ul>
-      <p class="main-nav__text">Бесплатная доставка по России</p>
-    </nav>
+  <h1 class="visually-hidden">Магазин изделий ручной работы "Мишка"</h1>
+  <div class="page-header__wrapper container">
+    <div class="page-header__inner">
+      <a class="page-header__logo logo">
+        <img src="img/mishka-logo-mobile.svg" width="86" height="35" alt="Логотип магазина Мишка">
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+          <svg width="20" height="14" viewBox="0 0 20 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M20 0H0V2H20V0Z" fill="#231F20"/>
+            <path d="M20 6H0V8H20V6Z" fill="#231F20"/>
+            <path d="M20 12H0V14H20V12Z" fill="#231F20"/>
+          </svg>
+        </button>
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item">
+            <a href="catalog.html">Каталог товаров</a>
+          </li>
+          <li class="site-list__item">
+            <a href="order.html">Вязание на заказ</a>
+          </li>
+        </ul>
+        <ul class="main-nav__list user-list">
+          <li class="user-list__item">
+            <a href="#">Поиск по сайту</a>
+          </li>
+          <li class="user-list__item">
+            <a href="#">Корзина: пока пуста</a>
+          </li>
+        </ul>
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item">
+            <a href="#">Новые поступления</a>
+          </li>
+          <li class="site-list__item">
+            <a href="#">Распродажа</a>
+          </li>
+        </ul>
+        <p class="main-nav__text">Бесплатная доставка по России</p>
+      </nav>
+    </div>
   </div>
 </header>
+
 <main class="page-main">
   <section class="form">
     <div class="form__wrapper container">
@@ -54,14 +66,12 @@
           <legend class="form__legend">Тип</legend>
           <ul class="form__list">
             <li class="form__option">
-              <input class="visually-hidden form__input form__input--radio" type="radio" name="product-type"
-                     value="addition-interior" id="filter-addition-interior" checked>
-              <label for="filter-addition-interior">Аксессуар для интерьера</label>
+              <input class="visually-hidden form__input form__input--radio" type="radio" name="product-type" value="addition-interior" id="filter-addition-interior" checked>
+              <label class="form__label" for="filter-addition-interior">Аксессуар для интерьера</label>
             </li>
             <li class="form__option">
-              <input class="visually-hidden form__input form__input--radio" type="radio" name="product-type" value="toy"
-                     id="filter-toy">
-              <label for="filter-toy">Детская игрушка</label>
+              <input class="visually-hidden form__input form__input--radio" type="radio" name="product-type" value="toy" id="filter-toy">
+              <label class="form__label" for="filter-toy">Детская игрушка</label>
             </li>
           </ul>
 
@@ -70,34 +80,28 @@
           <legend class="form__legend">Цвет</legend>
           <ul class="form__list">
             <li class="form__option">
-              <input class="visually-hidden form__input form__input--checkbox" type="checkbox" name="white"
-                     id="product-color-white" checked>
-              <label for="product-color-white">Белый</label>
+              <input class="visually-hidden form__input form__input--checkbox" type="checkbox" name="white" id="product-color-white" checked>
+              <label class="form__label" for="product-color-white">Белый</label>
             </li>
             <li class="form__option">
-              <input class="visually-hidden form__input form__input--checkbox" type="checkbox" name="white"
-                     id="product-color-gray" checked>
-              <label for="product-color-gray">Серый</label>
+              <input class="visually-hidden form__input form__input--checkbox" type="checkbox" name="white" id="product-color-gray" checked>
+              <label class="form__label" for="product-color-gray">Серый</label>
             </li>
             <li class="form__option">
-              <input class="visually-hidden form__input form__input--checkbox" type="checkbox" name="white"
-                     id="product-color-tiffany">
-              <label for="product-color-tiffany">&laquo;Тиффани&raquo;</label>
+              <input class="visually-hidden form__input form__input--checkbox" type="checkbox" name="white" id="product-color-tiffany">
+              <label class="form__label" for="product-color-tiffany">&laquo;Тиффани&raquo;</label>
             </li>
             <li class="form__option">
-              <input class="visually-hidden form__input form__input--checkbox" type="checkbox" name="white"
-                     id="product-color-black">
-              <label for="product-color-black">Черный</label>
+              <input class="visually-hidden form__input form__input--checkbox" type="checkbox" name="white" id="product-color-black">
+              <label class="form__label" for="product-color-black">Черный</label>
             </li>
             <li class="form__option">
-              <input class="visually-hidden form__input form__input--checkbox" type="checkbox" name="white"
-                     id="product-color-pink">
-              <label for="product-color-pink">Розовый</label>
+              <input class="visually-hidden form__input form__input--checkbox" type="checkbox" name="white" id="product-color-pink">
+              <label class="form__label" for="product-color-pink">Розовый</label>
             </li>
             <li class="form__option">
-              <input class="visually-hidden form__input form__input--checkbox" type="checkbox" name="white"
-                     id="product-color-orange">
-              <label for="product-color-orange">Оранжевый</label>
+              <input class="visually-hidden form__input form__input--checkbox" type="checkbox" name="white" id="product-color-orange">
+              <label class="form__label" for="product-color-orange">Оранжевый</label>
             </li>
 
           </ul>
@@ -144,14 +148,14 @@
           <legend class="form__legend">Доп</legend>
           <div class="form__row">
             <div class="form__box">
-              <textarea class="form__textarea" name="dop-info" cols="30" rows="10"
+              <textarea class="form__textarea form__input" name="dop-info" cols="30" rows="10"
                         placeholder="Опишите все ваши пожелания к заказу"></textarea>
             </div>
           </div>
         </fieldset>
         <div class="form__footer">
-          <button type="submit" class="form__submit button">Отправить заказ</button>
           <small class="form__notice">*Поля обязательны для заполнения</small>
+          <button type="submit" class="form__submit button">Отправить заказ</button>
         </div>
 
       </form>
@@ -162,7 +166,7 @@
 <footer class="page-footer">
   <div class="page-footer__wrapper container">
     <a class="page-footer__logo logo">
-      <img src="https://via.placeholder.com/86x35" width="86" height="35" alt="Логотип магазина Мишка">
+      <img src="img/mishka-logo-mobile.svg" width="86" height="35" alt="Логотип магазина Мишка">
     </a>
     <div class="page-footer__social social">
       <ul class="social__list">

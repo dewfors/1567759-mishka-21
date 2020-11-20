@@ -1,0 +1,14 @@
+.button {
+  display: block;
+  width: 260px;
+  padding: 14px 0;
+
+  @include font(17px, 20px, bold);
+  color: $greyish;
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+  background-color: $white;
+  border: 2px solid $greyish;
+  cursor: pointer;
+}

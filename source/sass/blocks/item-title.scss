@@ -1,0 +1,9 @@
+.item-title {
+  color: $black;
+
+  @include font(17px, 24px, 700);
+}
+
+.item-title--price {
+  font-size: 15px;
+}

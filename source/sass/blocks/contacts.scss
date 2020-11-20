@@ -1,0 +1,28 @@
+.contacts__wrapper {
+  padding: 35px 30px;
+}
+
+.contacts__title-wrapper {
+  margin-bottom: 40px;
+}
+
+.contacts__details-list {
+  margin-bottom: 70px;
+}
+
+
+.contacts__key {
+  @include font(14px, 30px, 400);
+}
+
+.contacts__value {
+  @include font(14px, 30px, 400);
+}
+
+.contacts__link {
+  color: $greyish;
+}
+
+.contacts__map {
+  margin-bottom: 40px;
+}

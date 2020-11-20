@@ -1,0 +1,21 @@
+.reviews__wrapper {
+  padding: 35px 30px;
+}
+
+.reviews__item {
+  margin: 0;
+}
+
+.reviews__text {
+  color: $greyish;
+
+  @include font(15px, 30px, 400);
+}
+
+.reviews__author-name {
+  @include font(17px, 24px, 700);
+}
+
+.reviews__author-link {
+  @include font(17px, 30px, 400);
+}

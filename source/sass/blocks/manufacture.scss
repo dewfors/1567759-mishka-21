@@ -1,0 +1,17 @@
+.manufacture__wrapper {
+  padding: 0 30px 26px;
+}
+
+.manufacture__inner {
+  border: 1px solid $grayborder;
+}
+
+.manufacture__title-box {
+  padding: 20px;
+}
+
+.manufacture__description {
+  padding: 35px 35px 40px;
+
+  @include font(13px, 24px, 400);
+}

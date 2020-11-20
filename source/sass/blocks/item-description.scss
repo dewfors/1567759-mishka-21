@@ -1,0 +1,5 @@
+.item-description {
+  color: $greyish;
+
+  @include font(13px, 30px, 400);
+}

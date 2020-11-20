@@ -1,0 +1,14 @@
+.about-us__wrapper {
+  padding: 35px 30px;
+}
+
+.about-us__list {
+  padding: 0;
+  list-style: none;
+}
+
+.about-us__text {
+  color: $black;
+
+  @include font(17px, 20px, 700);
+}

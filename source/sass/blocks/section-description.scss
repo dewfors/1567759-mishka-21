@@ -1,0 +1,5 @@
+.section-description {
+  color: $greyish;
+
+  @include font(15px, 24px, 400);
+}

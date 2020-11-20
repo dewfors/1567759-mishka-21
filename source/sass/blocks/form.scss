@@ -1,0 +1,65 @@
+.form__wrapper {
+  padding: 75px 30px 55px;
+}
+
+.form__title {
+  margin-bottom: 75px;
+}
+
+.form__description {
+  margin-bottom: 30px;
+}
+
+.form__group {
+  margin: 0;
+  padding: 30px 0;
+  border: none;
+}
+
+.form__legend {
+  color: $greenlight;
+  text-transform: uppercase;
+
+  @include font(17px, 16px, 700);
+}
+
+.form__list {
+  padding: 0;
+  list-style: none;
+}
+
+.form__label {
+  color: $black;
+
+  @include font(17px, 18px, 700);
+}
+
+.form__input {
+  border: none;
+
+  @include font(17px, 18px, 400);
+
+  ::placeholder {
+    color: $black;
+    opacity: 0.3;
+  }
+}
+
+.form__box {
+  padding: 17px 0;
+}
+
+.form__row {
+  box-shadow: inset 0 -2px 0 #000000;
+}
+
+.form__textarea {
+  width: 260px;
+  height: 140px;
+  padding: 17px;
+  border: 2px solid $greyish;
+}
+
+.form__submit {
+  margin-top: 30px;
+}

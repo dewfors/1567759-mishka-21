@@ -1,0 +1,12 @@
+.page__body {
+  min-width: $mobile-width;
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;
+  background-color: $white;
+
+  @include font(13px, 30px, 700);
+}

@@ -1,0 +1,25 @@
+.week-top-leader__wrapper {
+  padding: 40px 30px 35px;
+}
+
+.week-top-leader__head {
+  color: $greenlight;
+  text-transform: uppercase;
+
+  @include font(17px, 20px, 700);
+}
+
+.week-top-leader__key {
+  @include font(15px, 20px, 400);
+}
+
+.week-top-leader__value {
+  @include font(15px, 20px, 400);
+}
+
+.week-top-leader__price {
+  color: $greyish;
+  text-align: center;
+
+  @include font(17px, 24px, 700);
+}

@@ -10,15 +10,6 @@
   margin-bottom: 70px;
 }
 
-
-.contacts__key {
-  @include font(14px, 30px, 400);
-}
-
-.contacts__value {
-  @include font(14px, 30px, 400);
-}
-
 .contacts__link {
   color: $greyish;
 }

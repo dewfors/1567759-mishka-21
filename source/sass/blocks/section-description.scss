@@ -3,3 +3,9 @@
 
   @include font(15px, 24px, 400);
 }
+
+.section-description__keys {
+  color: $greyish;
+
+  @include font(14px, 30px, 400);
+}

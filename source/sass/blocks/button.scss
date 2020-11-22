@@ -1,7 +1,7 @@
 .button {
   display: block;
   width: 260px;
-  padding: 14px 0;
+  padding: 14px 5px;
 
   @include font(17px, 20px, bold);
   color: $greyish;

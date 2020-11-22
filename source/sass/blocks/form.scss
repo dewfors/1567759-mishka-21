@@ -35,7 +35,10 @@
 }
 
 .form__input {
+  width: 100%;
   border: none;
+  padding: 17px 0;
+  box-shadow: inset 0 -2px 0 $black;
 
   @include font(17px, 18px, 400);
 
@@ -43,14 +46,6 @@
     color: $black;
     opacity: 0.3;
   }
-}
-
-.form__box {
-  padding: 17px 0;
-}
-
-.form__row {
-  box-shadow: inset 0 -2px 0 #000000;
 }
 
 .form__textarea {
@@ -62,4 +57,10 @@
 
 .form__submit {
   margin-top: 30px;
+}
+
+.form__notice{
+  color: $greyish;
+
+  @include font(14px, 16px, 400);
 }

@@ -16,12 +16,24 @@
   text-align: center;
 
   @include font(27px, 30px, 700);
+
+  @media (min-width: $tablet-width) {
+    margin-top: 100px;
+    margin-bottom: 180px;
+
+    @include font(43px, 50px, 700);
+  }
 }
 
 .catalog-sections__list {
   margin: 0;
   padding: 0;
   list-style: none;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 .catalog-sections__item {

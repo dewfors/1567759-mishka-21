@@ -1,7 +1,16 @@
 .page-header__inner {
   width: 100%;
   padding: 22px 0;
-  display: flex;
-  justify-content: center;
-  position: relative;
+  //display: flex;
+  //flex-direction: column;
+  //position: relative;
+}
+
+.page-header__logo {
+
+  grid-area: logo;
+
+  //height: 85px;
+  //
+  //@include outline(red);
 }

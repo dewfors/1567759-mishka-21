@@ -5,6 +5,14 @@
 .about-us__list {
   padding: 0;
   list-style: none;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    max-height: 250px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
 }
 
 .about-us__text {

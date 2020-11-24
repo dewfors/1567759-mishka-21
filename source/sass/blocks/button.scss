@@ -12,3 +12,14 @@
   border: 2px solid currentColor;
   cursor: pointer;
 }
+
+.button--control {
+  width: 20px;
+  height: 19px;
+  padding: 0;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}

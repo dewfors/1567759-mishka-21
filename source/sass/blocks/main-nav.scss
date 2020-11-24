@@ -1,14 +1,49 @@
 .main-nav {
-  position: absolute;
-  right: 0;
+  @include outline(green);
+
+  display: grid;
+  //grid-template-rows: 80px 1fr;
+  grid-template-columns: 20% 1fr 15%;
+  grid-template-areas:
+    "empty logo toggle"
+    "nav nav nav"
+    "user user user";
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: 1fr 50%;
+    grid-template-areas:
+      "logo user"
+      "nav text";
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 200px 200px 1fr 200px 200px;
+    grid-template-areas:
+      "nav nav logo user user"
+      "news news empty text text";
+  }
 }
 
 .main-nav__toggle {
+  width: 20px;
+  height: 20px;
+  padding: 0;
   background-color: transparent;
   border: none;
-  padding: 0;
+  grid-area: toggle;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
 
 .main-nav__text {
   display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    margin: 0;
+    text-align: right;
+    grid-area: text;
+  }
 }

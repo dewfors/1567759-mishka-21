@@ -4,10 +4,24 @@
 
 .form__title {
   margin-bottom: 75px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 100px;
+
+    @include font(43px, 50px, 700);
+  }
+
+  @media (min-width: $desktop-width) {
+    @include font(53px, 57px, 700);
+  }
 }
 
 .form__description {
   margin-bottom: 30px;
+
+  @media (min-width: $tablet-width) {
+    @include font(17px, 30px, 400);
+  }
 }
 
 .form__group {
@@ -16,7 +30,17 @@
   border: none;
 }
 
+.form__group-box {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    align-items: flex-start;
+    gap: 200px;
+  }
+}
+
+
 .form__legend {
+  width: 80px;
   color: $greenlight;
   text-transform: uppercase;
 
@@ -24,8 +48,25 @@
 }
 
 .form__list {
+  margin: 0;
   padding: 0;
   list-style: none;
+}
+
+.form__list--horizontal {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 30px;
+  }
+}
+
+.form__row {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 
 .form__label {
@@ -55,11 +96,26 @@
   border: 2px solid $greyish;
 }
 
-.form__submit {
-  margin-top: 30px;
+.form__footer {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 
-.form__notice{
+.form__submit {
+  margin-top: 30px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 0;
+  }
+}
+
+.form__notice {
   color: $greyish;
 
   @include font(14px, 16px, 400);

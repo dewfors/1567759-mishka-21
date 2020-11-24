@@ -1,11 +1,11 @@
-.site-list {
+.news-list {
+  display: none;
   margin: 0;
   padding: 0;
   list-style: none;
-  //display: none;
-  grid-area: nav;
+  grid-area: news;
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $desktop-width) {
     display: flex;
     justify-content: space-around;
   }

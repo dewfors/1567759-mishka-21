@@ -1,4 +1,16 @@
 .social__list {
+  margin: 0;
   padding: 0;
   list-style: none;
+  width: 141px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.page-footer__copyright {
+  width: 180px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }

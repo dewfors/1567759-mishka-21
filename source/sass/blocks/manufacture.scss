@@ -4,14 +4,47 @@
 
 .manufacture__inner {
   border: 1px solid $grayborder;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-rows: min-content min-content min-content;
+    grid-template-areas:
+      "m-video"
+      "m-title"
+      "m-descr"
+      "m-btn";
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-rows: min-content min-content min-content;
+    grid-template-columns: 2fr 1fr;
+    grid-template-areas:
+      "m-video m-title"
+      "m-video m-descr"
+      "m-video m-btn";
+  }
 }
 
 .manufacture__title-box {
   padding: 20px;
+
+  @media (min-width: $tablet-width) {
+    grid-area: m-title;
+  }
+}
+
+.manufacture__video {
+  @media (min-width: $desktop-width) {
+    grid-area: m-video;
+  }
 }
 
 .manufacture__description {
   padding: 35px 35px 40px;
 
   @include font(13px, 24px, 400);
+
+  @media (min-width: $desktop-width) {
+    grid-area: m-descr;
+  }
 }

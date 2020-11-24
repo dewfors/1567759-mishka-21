@@ -4,3 +4,8 @@
   line-height: $line;
   font-weight: $weight;
 }
+
+@mixin outline($color) {
+  outline: 3px solid $color;
+  outline-offset: -3px;
+}

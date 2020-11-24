@@ -1,5 +1,25 @@
 .reviews__wrapper {
-  padding: 35px 0;
+  @media (min-width: $tablet-width) {
+    display: grid;
+    margin: auto;
+    grid-template-rows: min-content min-content;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "header button"
+      "article article";
+  }
+}
+
+.reviews__title {
+  @media (min-width: $tablet-width) {
+    grid-area: header;
+  }
+}
+
+.reviews__list {
+  @media (min-width: $tablet-width) {
+    grid-area: article;
+  }
 }
 
 .reviews__item {
@@ -18,4 +38,16 @@
 
 .reviews__author-link {
   @include font(17px, 30px, 400);
+}
+
+.reviews__buttons {
+  @media (min-width: $tablet-width) {
+    //grid-area: btns;
+  }
+}
+
+.reviews__write {
+  @media (min-width: $tablet-width) {
+    grid-area: button;
+  }
 }

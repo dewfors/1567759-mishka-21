@@ -1,5 +1,29 @@
 .week-top-leader__wrapper {
   padding: 40px 30px 35px;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-rows: min-content min-content min-content min-content min-content;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+      "header header header header"
+      "description description img img"
+      "details details img img"
+      "price price img img"
+      "btn btn img img";
+  }
+}
+
+.week-top-leader__header {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    grid-area: header;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row-reverse;
+  }
 }
 
 .week-top-leader__head {
@@ -7,6 +31,18 @@
   text-transform: uppercase;
 
   @include font(17px, 20px, 700);
+}
+
+.week-top-leader__description {
+  @media (min-width: $tablet-width) {
+    grid-area: description;
+  }
+}
+
+.week-top-leader__details {
+  @media (min-width: $tablet-width) {
+    grid-area: details;
+  }
 }
 
 .week-top-leader__key {
@@ -17,9 +53,25 @@
   @include font(15px, 20px, 400);
 }
 
+.week-top-leader__image {
+  @media (min-width: $tablet-width) {
+    grid-area: img;
+  }
+}
+
 .week-top-leader__price {
   color: $greyish;
   text-align: center;
 
   @include font(17px, 24px, 700);
+
+  @media (min-width: $tablet-width) {
+    grid-area: price;
+  }
+}
+
+.week-top-leader__button {
+  @media (min-width: $tablet-width) {
+    grid-area: btn;
+  }
 }

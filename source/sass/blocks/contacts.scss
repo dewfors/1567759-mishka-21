@@ -1,13 +1,57 @@
 .contacts__wrapper {
   padding: 35px 30px;
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-rows: min-content min-content min-content;
+    //grid-template-columns: 1fr 1fr 1fr 1fr;
+    //grid-template-areas:
+    //"header header img img"
+    //"details details img img"
+    //"btn btn img img";
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "ch ci"
+      "cd ci"
+      "cb ci";
+  }
 }
 
 .contacts__title-wrapper {
   margin-bottom: 40px;
+  display: flex;
+  justify-content: space-between;
+
+  @media (min-width: $desktop-width) {
+    grid-area: ch;
+  }
+}
+
+.contacts__title {
+  @media (min-width: $desktop-width) {
+    order: 2;
+  }
+}
+
+.contacts__title-icon {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
 }
 
 .contacts__details-list {
   margin-bottom: 70px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-area: cd;
+  }
 }
 
 .contacts__link {
@@ -16,4 +60,14 @@
 
 .contacts__map {
   margin-bottom: 40px;
+
+  @media (min-width: $desktop-width) {
+    grid-area: ci;
+  }
+}
+
+.contacts__write {
+  @media (min-width: $desktop-width) {
+    grid-area: cb;
+  }
 }

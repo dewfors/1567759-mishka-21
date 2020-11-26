@@ -11,9 +11,9 @@
     //"btn btn img img";
     grid-template-columns: 1fr 1fr;
     grid-template-areas:
-      "ch ci"
-      "cd ci"
-      "cb ci";
+      "contacts-title contacts-map"
+      "contacts-details contacts-map"
+      "contacts-write contacts-map";
   }
 }
 
@@ -23,7 +23,7 @@
   justify-content: space-between;
 
   @media (min-width: $desktop-width) {
-    grid-area: ch;
+    grid-area: contacts-title;
   }
 }
 
@@ -50,7 +50,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    grid-area: cd;
+    grid-area: contacts-details;
   }
 }
 
@@ -62,12 +62,12 @@
   margin-bottom: 40px;
 
   @media (min-width: $desktop-width) {
-    grid-area: ci;
+    grid-area: contacts-map;
   }
 }
 
 .contacts__write {
   @media (min-width: $desktop-width) {
-    grid-area: cb;
+    grid-area: contacts-write;
   }
 }

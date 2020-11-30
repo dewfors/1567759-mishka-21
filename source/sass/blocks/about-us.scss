@@ -1,5 +1,9 @@
 .about-us__wrapper {
-  padding: 35px 30px;
+  padding: 38px 30px 27px;
+}
+
+.about-us__title {
+  margin-bottom: 30px;
 }
 
 .about-us__list {
@@ -14,7 +18,22 @@
   }
 }
 
+.about-us__item {
+  position: relative;
+  padding-top: 53px;
+  padding-bottom: 30px;
+}
+
+.about-us__icon {
+  //display: none;
+  position: absolute;
+  top: 0;
+  left: 9%;
+  transform: translate(-50%);
+}
+
 .about-us__text {
+  margin: 0;
   color: $black;
 
   @include font(17px, 20px, 700);

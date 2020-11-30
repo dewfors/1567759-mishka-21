@@ -1,5 +1,5 @@
 .week-top-leader__wrapper {
-  padding: 40px 30px 35px;
+  padding: 31px 30px 35px;
 
   @media (min-width: $tablet-width) {
     display: grid;
@@ -26,7 +26,13 @@
   }
 }
 
+.week-top-leader__title {
+  letter-spacing: -1px;
+}
+
 .week-top-leader__head {
+  //margin: 0;
+  margin-top: 5px;
   color: $greenlight;
   text-transform: uppercase;
 
@@ -34,15 +40,26 @@
 }
 
 .week-top-leader__description {
+  margin-bottom: 20px;
   @media (min-width: $tablet-width) {
     grid-area: description;
   }
 }
 
 .week-top-leader__details {
+  margin: 0;
+  margin-bottom: 28px;
+  padding: 0;
+  list-style: none;
+
   @media (min-width: $tablet-width) {
     grid-area: details;
   }
+}
+
+.week-top-leader__item {
+  padding-top: 7px;
+  padding-bottom: 13px;
 }
 
 .week-top-leader__key {
@@ -54,12 +71,14 @@
 }
 
 .week-top-leader__image {
+  margin-bottom: 26px;
   @media (min-width: $tablet-width) {
     grid-area: img;
   }
 }
 
 .week-top-leader__price {
+  margin-bottom: 24px;
   color: $greyish;
   text-align: center;
 

@@ -24,9 +24,11 @@
 
 .reviews__item {
   margin: 0;
+  margin-bottom: 27px;
 }
 
 .reviews__text {
+  padding-bottom: 16px;
   color: $greyish;
 
   @include font(15px, 30px, 400);
@@ -37,13 +39,23 @@
 }
 
 .reviews__author-link {
+  margin: 0;
   @include font(17px, 30px, 400);
 }
 
 .reviews__buttons {
+  //display: grid;
+  //grid-template-columns: 1fr 1fr;
+  display: flex;
+  margin-bottom: 33px;
   @media (min-width: $tablet-width) {
     //grid-area: btns;
   }
+}
+
+.reviews__button {
+  width: 50%;
+  border: none;
 }
 
 .reviews__write {

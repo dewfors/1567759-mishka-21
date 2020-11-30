@@ -7,6 +7,58 @@
 
   @media (min-width: $tablet-width) {
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-start;
+    padding-top: 20px;
+  }
+}
+
+.site-list__item {
+  @media (min-width: $tablet-width) {
+    margin-right: 20px;
+  }
+}
+
+.site-list__link {
+  position: relative;
+  display: block;
+  padding: 27px 75px;
+  color: $black;
+  border-top: 1px solid $grayborder;
+  border-bottom: 1px solid $grayborder;
+
+
+  @include font(17px, 24px, 700);
+
+  @media (min-width: $tablet-width) {
+    border: none;
+    padding: 0;
+
+    @include font(15px, 24px, 700);
+  }
+
+}
+
+.site-list__link-cart {
+  @media (min-width: $tablet-width) {
+    display: block;
+    padding: 27px 0 27px 32px;
+    color: $black;
+    text-align: end;
+  }
+}
+
+.site-list__icon {
+  position: absolute;
+  top: 32px;
+  left: 27px;
+  width: 18px;
+  height: 18px;
+  //opacity: 0.2;
+  fill: $black;
+}
+
+.site-list__link-search-text {
+  @media (min-width: $tablet-width) {
+    display: none;
   }
 }

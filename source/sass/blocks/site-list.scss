@@ -22,6 +22,8 @@
   position: relative;
   display: block;
   padding: 27px 75px;
+  padding-left: 46px;
+  padding-right: 0;
   color: $black;
   border-top: 1px solid $grayborder;
   border-bottom: 1px solid $grayborder;
@@ -49,8 +51,8 @@
 
 .site-list__icon {
   position: absolute;
-  top: 32px;
-  left: 27px;
+  top: 28px;
+  left: 2px;
   width: 18px;
   height: 18px;
   //opacity: 0.2;

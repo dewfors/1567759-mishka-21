@@ -46,14 +46,16 @@
   box-shadow: 0 7px 0 0 $blacklight, 0 14px 0 0 $blacklight;
 }
 
+
+
 .main-nav--opened .main-nav__toggle {
   &::before,
   &::after {
     content: "";
     position: absolute;
-    top: 32px;
-    right: 31px;
-    width: 20px;
+    top: 38px;
+    right: 26px;
+    width: 29px;
     height: 2px;
     background-color: $black;
   }
@@ -101,15 +103,15 @@
 
 .main-nav--nojs {
 
-  & .main-nav__toggle{
+  & .main-nav__toggle {
     display: none;
   }
 
-  & .site-list__item{
+  & .site-list__item {
     display: block;
   }
 
-  & .user-list__item{
+  & .user-list__item {
     display: block;
   }
 

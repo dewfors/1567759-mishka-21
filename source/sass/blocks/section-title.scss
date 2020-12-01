@@ -7,6 +7,10 @@
   @media (min-width: $tablet-width) {
     @include font(43px, 50px, 700);
   }
+
+  @media (min-width: $desktop-width) {
+    @include font(53px, 57px, 700);
+  }
 }
 
 .section-title--small {

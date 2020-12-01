@@ -29,6 +29,13 @@
 
     @include font(43px, 50px, 700);
   }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 64px;
+    margin-bottom: 360px;
+
+    @include font(53px, 57px, 700);
+  }
 }
 
 .catalog-sections__list {

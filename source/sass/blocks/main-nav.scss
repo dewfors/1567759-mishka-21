@@ -30,6 +30,7 @@
   .main-nav--closed .site-list__item {
     display: none;
   }
+
   .main-nav--closed .user-list__item {
     display: none;
   }
@@ -45,7 +46,6 @@
   background-color: $blacklight;
   box-shadow: 0 7px 0 0 $blacklight, 0 14px 0 0 $blacklight;
 }
-
 
 
 .main-nav--opened .main-nav__toggle {
@@ -103,7 +103,6 @@
 }
 
 .main-nav--nojs {
-
   & .main-nav__toggle {
     display: none;
   }
@@ -115,5 +114,4 @@
   & .user-list__item {
     display: block;
   }
-
 }

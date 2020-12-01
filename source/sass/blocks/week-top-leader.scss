@@ -31,6 +31,7 @@
 
 .week-top-leader__title {
   letter-spacing: -1px;
+
   @media (min-width: $tablet-width) {
     letter-spacing: -2px;
   }
@@ -49,12 +50,14 @@
     width: 100px;
     margin: auto 0;
     padding-right: 27px;
+
     @include font(17px, 17px, 700);
   }
 }
 
 .week-top-leader__description {
   margin-bottom: 20px;
+
   @media (min-width: $tablet-width) {
     width: 292px;
     margin-bottom: 38px;
@@ -76,6 +79,7 @@
 .week-top-leader__item {
   padding-top: 7px;
   padding-bottom: 13px;
+
   @media (min-width: $tablet-width) {
     width: 292px;
     padding: 10px 0;
@@ -85,16 +89,15 @@
 
 .week-top-leader__key {
   @include font(15px, 20px, 400);
-
 }
 
 .week-top-leader__value {
   @include font(15px, 20px, 400);
-
 }
 
 .week-top-leader__image {
   margin-bottom: 26px;
+
   @media (min-width: $tablet-width) {
     margin-bottom: 0;
     padding-top: 30px;

@@ -4,7 +4,7 @@
   padding-bottom: 55px;
 }
 
-.form__title-box{
+.form__title-box {
   margin: 0 -30px;
   padding-top: 75px;
   padding-bottom: 75px;
@@ -29,6 +29,7 @@
 .form__description {
   margin-top: 15px;
   margin-bottom: 30px;
+
   @include font(13px, 24px, 400);
 
   @media (min-width: $tablet-width) {
@@ -66,7 +67,7 @@
   list-style: none;
 }
 
-.form__option{
+.form__option {
   padding: 10px 0;
 }
 

@@ -1,10 +1,6 @@
 .page-footer__wrapper {
-  //padding: 25px 30px;
   padding-top: 25px;
   padding-bottom: 25px;
-
-
-  //padding-top: 32px;
   background-color: $gray;
 
   @media (min-width: $tablet-width) {
@@ -16,8 +12,6 @@
   }
 }
 
-
-
 .page-footer__logo {
   display: none;
 
@@ -26,12 +20,12 @@
   }
 }
 
-.page-footer__social{
+.page-footer__social {
   display: flex;
   justify-content: center;
 }
 
-.page-footer__copyright{
+.page-footer__copyright {
   display: flex;
   justify-content: center;
   margin: auto;

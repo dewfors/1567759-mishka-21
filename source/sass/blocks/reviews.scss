@@ -48,12 +48,13 @@
   @media (min-width: $tablet-width) {
     @include font(17px, 30px, 400);
   }
+
   @media (min-width: $desktop-width) {
     padding-bottom: 0;
   }
 }
 
-.reviews__author{
+.reviews__author {
   @media (min-width: $tablet-width) {
     padding-top: 24px;
   }
@@ -69,16 +70,15 @@
 
 .reviews__author-link {
   margin: 0;
+
   @include font(17px, 30px, 400);
 }
 
 .reviews__buttons {
-  //display: grid;
-  //grid-template-columns: 1fr 1fr;
   display: flex;
   margin-bottom: 33px;
+
   @media (min-width: $tablet-width) {
-    //grid-area: btns;
     position: absolute;
     right: 23px;
     bottom: 25px;
@@ -97,11 +97,10 @@
   border: none;
 }
 
-.reviews__button--prev{
+.reviews__button--prev {
   @media (min-width: $tablet-width) {
     margin-right: 25px;
   }
-
 }
 
 .reviews__write {

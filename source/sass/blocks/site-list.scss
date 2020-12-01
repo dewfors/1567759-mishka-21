@@ -2,7 +2,6 @@
   margin: 0;
   padding: 0;
   list-style: none;
-  //display: none;
   grid-area: nav;
 
   @media (min-width: $tablet-width) {
@@ -40,7 +39,6 @@
 
     @include font(15px, 24px, 700);
   }
-
 }
 
 .site-list__link-cart {
@@ -49,6 +47,7 @@
     padding: 26px 0 26px 32px;
     color: $black;
     text-align: end;
+
     @include font(17px, 24px, 700);
   }
 }
@@ -62,8 +61,6 @@
   //opacity: 0.2;
   fill: $black;
 }
-
-
 
 .site-list__link-search-text {
   @media (min-width: $tablet-width) {

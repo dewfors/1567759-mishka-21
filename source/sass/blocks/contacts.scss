@@ -111,21 +111,20 @@
   }
 }
 
-.contacts__key{
+.contacts__key {
   @media (min-width: $tablet-width) {
-    @include font(17px, 30px, 400)
+    @include font(17px, 30px, 400);
   }
 }
 
-.contacts__value{
+.contacts__value {
   @media (min-width: $tablet-width) {
-    @include font(17px, 30px, 400)
+    @include font(17px, 30px, 400);
   }
 }
 
-.contacts__address{
+.contacts__address {
   @media (min-width: $tablet-width) {
-    @include font(17px, 30px, 400)
+    @include font(17px, 30px, 400);
   }
 }
-

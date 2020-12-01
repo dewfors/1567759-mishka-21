@@ -1,5 +1,9 @@
 .contacts__wrapper {
-  padding: 35px 30px;
+  padding: 89px 30px 40px;
+
+  @media (min-width: $tablet-width) {
+    padding: 152px 50px 55px;
+  }
 
   @media (min-width: $desktop-width) {
     display: grid;
@@ -18,11 +22,17 @@
 }
 
 .contacts__title-wrapper {
-  margin-bottom: 40px;
+  margin-bottom: 28px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 30px;
+  }
 
   @media (min-width: $desktop-width) {
+
     grid-area: contacts-title;
   }
 }
@@ -38,15 +48,21 @@
 
   @media (min-width: $tablet-width) {
     display: block;
+    margin-right: 3px;
   }
 }
 
 .contacts__details-list {
-  margin-bottom: 70px;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 31px;
+  list-style: none;
 
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 18px;
+    padding-right: 41px;
   }
 
   @media (min-width: $desktop-width) {
@@ -54,12 +70,28 @@
   }
 }
 
+.contacts__details-item {
+  grid-template-columns: 77px 1fr;
+  padding-bottom: 30px;
+}
+
 .contacts__link {
   color: $greyish;
+  border-bottom: 1px solid $green;
+  display: block;
+
+  @media (min-width: $tablet-width) {
+    //border-bottom: none;
+  }
 }
 
 .contacts__map {
-  margin-bottom: 40px;
+  margin: 0 -30px 40px;
+  //margin-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 57px;
+  }
 
   @media (min-width: $desktop-width) {
     grid-area: contacts-map;
@@ -67,7 +99,32 @@
 }
 
 .contacts__write {
+  font-size: 18px;
+
+  @media (min-width: $tablet-width) {
+    width: 230px;
+    margin: 0 auto;
+  }
+
   @media (min-width: $desktop-width) {
     grid-area: contacts-write;
+  }
+}
+
+.contacts__key {
+  @media (min-width: $tablet-width) {
+    @include font(17px, 30px, 400);
+  }
+}
+
+.contacts__value {
+  @media (min-width: $tablet-width) {
+    @include font(17px, 30px, 400);
+  }
+}
+
+.contacts__address {
+  @media (min-width: $tablet-width) {
+    @include font(17px, 30px, 400);
   }
 }

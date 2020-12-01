@@ -1,5 +1,24 @@
 .about-us__wrapper {
-  padding: 35px 30px;
+  padding-top: 38px;
+  padding-bottom: 27px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 10px;
+    padding-left: 225px;
+    padding-right: 225px;
+  }
+}
+
+.about-us__title {
+  margin-bottom: 30px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 44px;
+  }
 }
 
 .about-us__list {
@@ -7,15 +26,47 @@
   padding: 0;
   list-style: none;
 
-  display: grid;
+  //display: grid;
+  display: flex;
 
   @media (min-width: $tablet-width) {
-    grid-template-columns: 1fr 1fr;
+    //grid-template-columns: 1fr 1fr;
+    max-height: 500px;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+}
+
+.about-us__item {
+  position: relative;
+  padding-top: 53px;
+  padding-bottom: 30px;
+
+  @media (min-width: $tablet-width) {
+    width: 50%;
+    padding-bottom: 58px;
+  }
+}
+
+.about-us__icon {
+  //display: none;
+  position: absolute;
+  top: 0;
+  left: 9%;
+  transform: translate(-50%);
+
+  @media (min-width: $tablet-width) {
+    left: 7%;
   }
 }
 
 .about-us__text {
+  margin: 0;
   color: $black;
 
   @include font(17px, 20px, 700);
+
+  @media (min-width: $tablet-width) {
+    @include font(20px, 22px, 700);
+  }
 }

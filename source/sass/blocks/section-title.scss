@@ -1,5 +1,22 @@
 .section-title {
+  margin: 0;
   color: $black;
 
-  @include font(25px, 30px, 700);
+  @include font(27px, 30px, 700);
+
+  @media (min-width: $tablet-width) {
+    @include font(43px, 50px, 700);
+  }
+
+  @media (min-width: $desktop-width) {
+    @include font(53px, 57px, 700);
+  }
+}
+
+.section-title--small {
+  @include font(18px, 30px, 700);
+
+  @media (min-width: $tablet-width) {
+    @include font(43px, 50px, 700);
+  }
 }

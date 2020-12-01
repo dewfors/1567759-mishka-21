@@ -1,7 +1,9 @@
 .week-top-leader__wrapper {
-  padding: 40px 30px 35px;
+  padding: 31px 30px 35px;
 
   @media (min-width: $tablet-width) {
+    //padding: 0;
+    padding: 65px 50px;
     display: grid;
     grid-template-rows: min-content min-content min-content min-content min-content;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -19,6 +21,7 @@
     display: flex;
     justify-content: space-between;
     grid-area: header;
+    padding-bottom: 20px;
   }
 
   @media (min-width: $desktop-width) {
@@ -26,22 +29,61 @@
   }
 }
 
+.week-top-leader__title {
+  letter-spacing: -1px;
+
+  @media (min-width: $tablet-width) {
+    letter-spacing: -2px;
+  }
+}
+
 .week-top-leader__head {
+  //margin: 0;
+  margin-top: 5px;
   color: $greenlight;
+  text-align: center;
   text-transform: uppercase;
 
   @include font(17px, 20px, 700);
+
+  @media (min-width: $tablet-width) {
+    width: 100px;
+    margin: auto 0;
+    padding-right: 27px;
+
+    @include font(17px, 17px, 700);
+  }
 }
 
 .week-top-leader__description {
+  margin-bottom: 20px;
+
   @media (min-width: $tablet-width) {
+    width: 292px;
+    margin-bottom: 38px;
     grid-area: description;
   }
 }
 
 .week-top-leader__details {
+  margin: 0;
+  margin-bottom: 28px;
+  padding: 0;
+  list-style: none;
+
   @media (min-width: $tablet-width) {
     grid-area: details;
+  }
+}
+
+.week-top-leader__item {
+  padding-top: 7px;
+  padding-bottom: 13px;
+
+  @media (min-width: $tablet-width) {
+    width: 292px;
+    padding: 10px 0;
+    border-bottom: 1px solid $grayborder;
   }
 }
 
@@ -54,24 +96,40 @@
 }
 
 .week-top-leader__image {
+  margin-bottom: 26px;
+
   @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+    padding-top: 30px;
     grid-area: img;
   }
 }
 
+.week-top-leader__img {
+  @media (min-width: $tablet-width) {
+    width: 100%;
+  }
+}
+
 .week-top-leader__price {
+  margin-bottom: 24px;
   color: $greyish;
   text-align: center;
 
   @include font(17px, 24px, 700);
 
   @media (min-width: $tablet-width) {
+    width: 288px;
+    margin-top: 30px;
+    margin-bottom: 33px;
     grid-area: price;
+    font-size: 20px;
   }
 }
 
 .week-top-leader__button {
   @media (min-width: $tablet-width) {
+    width: 292px;
     grid-area: btn;
   }
 }

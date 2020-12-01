@@ -1,9 +1,15 @@
 .about-us__wrapper {
   padding: 38px 30px 27px;
+  @media (min-width: $tablet-width) {
+    padding: 60px 50px 27px;
+  }
 }
 
 .about-us__title {
   margin-bottom: 30px;
+  @media (min-width: $tablet-width) {
+    margin-bottom: 44px;
+  }
 }
 
 .about-us__list {
@@ -11,10 +17,14 @@
   padding: 0;
   list-style: none;
 
-  display: grid;
+  //display: grid;
+  display: flex;
 
   @media (min-width: $tablet-width) {
-    grid-template-columns: 1fr 1fr;
+    //grid-template-columns: 1fr 1fr;
+    max-height: 500px;
+    flex-direction: column;
+    flex-wrap: wrap;
   }
 }
 
@@ -22,6 +32,11 @@
   position: relative;
   padding-top: 53px;
   padding-bottom: 30px;
+
+  @media (min-width: $tablet-width) {
+    width: 50%;
+    padding-bottom: 58px;
+  }
 }
 
 .about-us__icon {
@@ -30,6 +45,10 @@
   top: 0;
   left: 9%;
   transform: translate(-50%);
+
+  @media (min-width: $tablet-width) {
+    left: 7%;
+  }
 }
 
 .about-us__text {
@@ -37,4 +56,8 @@
   color: $black;
 
   @include font(17px, 20px, 700);
+
+  @media (min-width: $tablet-width) {
+    @include font(20px, 22px, 700);
+  }
 }

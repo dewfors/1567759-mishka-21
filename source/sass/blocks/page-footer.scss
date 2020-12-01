@@ -1,5 +1,9 @@
 .page-footer__wrapper {
-  padding: 25px 30px;
+  //padding: 25px 30px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+
+
   //padding-top: 32px;
   background-color: $gray;
 
@@ -7,6 +11,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-top: 50px;
+    padding-bottom: 58px;
   }
 }
 
@@ -30,4 +36,9 @@
   justify-content: center;
   margin: auto;
   padding-top: 39px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    padding: 0;
+  }
 }

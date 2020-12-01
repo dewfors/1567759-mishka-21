@@ -4,10 +4,16 @@
   background-repeat: no-repeat;
   background-position: center -12%;
   min-height: 373px;
+
+  @media (min-width: $tablet-width) {
+    background-size: 83%;
+    background-position: center 78%;
+  }
 }
 
 .catalog-sections__wrapper {
   padding-top: 47px;
+  //padding-bottom: 50px;
 }
 
 .catalog-sections__intro {
@@ -18,8 +24,8 @@
   @include font(27px, 30px, 700);
 
   @media (min-width: $tablet-width) {
-    margin-top: 100px;
-    margin-bottom: 180px;
+    margin-top: 64px;
+    margin-bottom: 372px;
 
     @include font(43px, 50px, 700);
   }
@@ -33,12 +39,17 @@
   display: grid;
 
   @media (min-width: $tablet-width) {
+    margin: 0;
     grid-template-columns: 1fr 1fr;
   }
 }
 
 .catalog-sections__item {
   padding: 24px 0 19px 30px;
+
+  @media (min-width: $tablet-width) {
+    padding: 26px 0 19px 36px;
+  }
 
   &--light {
     background-color: $greenlight;

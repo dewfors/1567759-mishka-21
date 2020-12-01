@@ -95,6 +95,7 @@
     margin: 0;
     padding-top: 18px;
     text-align: right;
+    color: $greyish;
     grid-area: text;
 
     @include font(15px, 24px, 400);

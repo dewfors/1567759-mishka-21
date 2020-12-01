@@ -2,6 +2,7 @@
   @media (min-width: $tablet-width) {
     display: grid;
     margin: auto;
+    padding-top: 76px;
     grid-template-rows: min-content min-content;
     grid-template-columns: 1fr 1fr;
     grid-template-areas:
@@ -18,6 +19,9 @@
 
 .reviews__list {
   @media (min-width: $tablet-width) {
+    position: relative;
+    width: 668px;
+    padding-top: 24px;
     grid-area: article;
   }
 }
@@ -32,10 +36,24 @@
   color: $greyish;
 
   @include font(15px, 30px, 400);
+
+  @media (min-width: $tablet-width) {
+    @include font(17px, 30px, 400);
+  }
+}
+
+.reviews__author{
+  @media (min-width: $tablet-width) {
+    padding-top: 24px;
+  }
 }
 
 .reviews__author-name {
   @include font(17px, 24px, 700);
+
+  @media (min-width: $tablet-width) {
+    @include font(18px, 24px, 700);
+  }
 }
 
 .reviews__author-link {
@@ -50,6 +68,12 @@
   margin-bottom: 33px;
   @media (min-width: $tablet-width) {
     //grid-area: btns;
+    position: absolute;
+    right: 23px;
+    bottom: 25px;
+    width: 137px;
+    margin-bottom: 0;
+    justify-content: space-between;
   }
 }
 
@@ -58,8 +82,17 @@
   border: none;
 }
 
+.reviews__button--prev{
+  @media (min-width: $tablet-width) {
+    margin-right: 25px;
+  }
+
+}
+
 .reviews__write {
   @media (min-width: $tablet-width) {
+    width: 175px;
+    margin-left: auto;
     grid-area: button;
   }
 }

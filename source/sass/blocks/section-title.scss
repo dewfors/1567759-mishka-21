@@ -2,7 +2,7 @@
   margin: 0;
   color: $black;
 
-  @include font(25px, 30px, 700);
+  @include font(27px, 30px, 700);
 
   @media (min-width: $tablet-width) {
     @include font(43px, 50px, 700);

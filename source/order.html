@@ -66,36 +66,56 @@
 
 <main class="page-main">
   <section class="form">
-    <div class="container">
-      <div class="form__wrapper">
+
+    <div class="form__wrapper form__wrapper--background">
+      <div class="container">
         <div class="form__title-box">
           <h2 class="form__title section-title">Вязание на заказ</h2>
         </div>
+      </div>
+    </div>
+
+    <div class="form__wrapper">
+      <div class="container">
         <p class="form__description section-description">
           Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы
           уточнить детали.
         </p>
-        <form class="form__order" action="https://echo.htmlacademy.ru/" method="GET">
-          <fieldset class="form__group">
+      </div>
+    </div>
+
+    <form class="form__order" action="https://echo.htmlacademy.ru/" method="GET">
+      <div class="form__wrapper">
+        <div class="container">
+          <fieldset class="form__group form__group--type">
             <div class="form__group-box">
-              <legend class="form__legend">Тип</legend>
+              <div class="form__legend-box">
+                <legend class="form__legend">Тип</legend>
+                <div class="form__legend-line"></div>
+              </div>
               <ul class="form__list">
-                <li class="form__option">
+                <li class="form__option form__option--type">
                   <input class="visually-hidden form__input form__input--radio  form__input--check" type="radio" name="product-type" value="addition-interior" id="filter-addition-interior" checked>
                   <label class="form__label form__label--check" for="filter-addition-interior">Аксессуар для интерьера</label>
                 </li>
-                <li class="form__option">
+                <li class="form__option form__option--type">
                   <input class="visually-hidden form__input form__input--radio  form__input--check" type="radio" name="product-type" value="toy" id="filter-toy">
                   <label class="form__label form__label--check" for="filter-toy">Детская игрушка</label>
                 </li>
               </ul>
             </div>
-
           </fieldset>
-          <fieldset class="form__group">
+        </div>
+      </div>
+      <div class="form__wrapper form__wrapper--background">
+        <div class="container">
+          <fieldset class="form__group form__group--color">
             <div class="form__group-box">
-              <legend class="form__legend">Цвет</legend>
-              <ul class="form__list form__list--horizontal">
+              <div class="form__legend-box form__legend-box--color">
+                <legend class="form__legend">Цвет</legend>
+                <div class="form__legend-line"></div>
+              </div>
+              <ul class="form__list form__list--wrap">
                 <li class="form__option form__option--checkbox">
                   <input class="visually-hidden form__input form__input--checkbox form__input--check" type="checkbox" name="white" id="product-color-white" checked>
                   <label class="form__label form__label--check" for="product-color-white">Белый</label>
@@ -123,11 +143,17 @@
 
               </ul>
             </div>
-
           </fieldset>
-          <fieldset class="form__group">
+        </div>
+      </div>
+      <div class="form__wrapper">
+        <div class="container">
+          <fieldset class="form__group form__group--fio">
             <div class="form__group-box">
-              <legend class="form__legend">ФИО</legend>
+              <div class="form__legend-box form__legend-box--fio">
+                <legend class="form__legend">ФИО</legend>
+                <div class="form__legend-line"></div>
+              </div>
               <div class="form__rows">
                 <div class="form__row">
                   <label for="first-name" class="form__label">Имя:</label>
@@ -150,51 +176,83 @@
               </div>
             </div>
           </fieldset>
-          <fieldset class="form__group">
+        </div>
+      </div>
+      <div class="form__wrapper form__wrapper--background">
+        <div class="container">
+          <fieldset class="form__group form__group--tel">
             <div class="form__group-box">
-              <legend class="form__legend">Тел</legend>
+              <div class="form__legend-box form__legend-box--tel">
+                <legend class="form__legend">Тел</legend>
+                <div class="form__legend-line"></div>
+              </div>
               <div class="form__rows">
                 <div class="form__row">
-                  <div class="form__box">
-                    <input type="tel" class="form__input" name="phone" placeholder="+7 xxx xxx xx xx*">
+                  <div class="form__box form__box--nomargin">
+                    <input type="tel" class="form__input form__input--background" name="phone" placeholder="+7 XXX XXX XX XX*">
                   </div>
                 </div>
               </div>
             </div>
           </fieldset>
-          <fieldset class="form__group">
+        </div>
+      </div>
+      <div class="form__wrapper form__wrapper--background">
+        <div class="container">
+          <fieldset class="form__group form__group--email">
             <div class="form__group-box">
-              <legend class="form__legend">e-mail</legend>
+              <div class="form__legend-box form__legend-box--email">
+                <legend class="form__legend">e-mail</legend>
+                <div class="form__legend-line"></div>
+              </div>
               <div class="form__rows">
                 <div class="form__row">
-                  <div class="form__box">
-                    <input type="email" class="form__input" name="email" placeholder="Ваш Email*">
+                  <div class="form__box form__box--nomargin">
+                    <input type="email" class="form__input form__input--background" name="email" placeholder="Ваш Email*">
                   </div>
                 </div>
               </div>
             </div>
           </fieldset>
-          <fieldset class="form__group">
+        </div>
+      </div>
+      <div class="form__wrapper">
+        <div class="container">
+          <fieldset class="form__group form__group--dop">
             <div class="form__group-box">
-              <legend class="form__legend">Доп</legend>
+              <div class="form__legend-box form__legend-box--dop">
+                <legend class="form__legend">Доп</legend>
+                <div class="form__legend-line"></div>
+              </div>
               <div class="form__rows">
                 <div class="form__row">
-                  <div class="form__box">
-              <textarea class="form__textarea" name="dop-info" cols="30" rows="10"
-                        placeholder="Опишите все ваши пожелания к заказу"></textarea>
+                  <div class="form__box form__box--dop form__box--nomargin">
+                    <textarea class="form__textarea" name="dop-info" cols="30" rows="10"
+                              placeholder="Опишите все ваши пожелания к заказу"></textarea>
                   </div>
                 </div>
               </div>
             </div>
           </fieldset>
+        </div>
+      </div>
+      <div class="form__wrapper">
+        <div class="container">
           <div class="form__footer">
             <small class="form__notice">*Поля обязательны для заполнения</small>
             <button type="submit" class="form__submit button">Отправить заказ</button>
           </div>
-
-        </form>
+        </div>
       </div>
-    </div>
+
+
+
+
+
+    </form>
+
+
+
   </section>
 </main>
 

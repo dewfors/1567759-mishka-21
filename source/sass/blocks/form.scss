@@ -41,6 +41,12 @@
   }
 }
 
+.form__description-inner {
+  @media (min-width: $desktop-width) {
+    padding-top: 87px;
+  }
+}
+
 .form__description {
   margin-top: 15px;
   margin-bottom: 0;
@@ -49,6 +55,11 @@
 
   @media (min-width: $tablet-width) {
     @include font(17px, 30px, 400);
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 700px;
+    margin: 0 auto;
   }
 }
 
@@ -83,6 +94,10 @@
     padding-top: 49px;
     padding-bottom: 30px;
   }
+  @media (min-width: $desktop-width) {
+    max-width: 935px;
+  }
+
 }
 
 .form__group--tel {
@@ -90,6 +105,9 @@
   @media (min-width: $tablet-width) {
     padding-top: 47px;
     padding-bottom: 0;
+  }
+  @media (min-width: $desktop-width) {
+    max-width: 935px;
   }
 }
 
@@ -99,6 +117,9 @@
     padding-top: 3px;
     padding-bottom: 25px;
   }
+  @media (min-width: $desktop-width) {
+    max-width: 935px;
+  }
 }
 
 .form__group--dop {
@@ -107,7 +128,9 @@
     padding-top: 53px;
     padding-bottom: 25px;
   }
-
+  @media (min-width: $desktop-width) {
+    max-width: 935px;
+  }
 }
 
 
@@ -117,6 +140,12 @@
     align-items: flex-start;
     //gap: 200px;
   }
+  @media (min-width: $desktop-width) {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+
+
 }
 
 .form__legend-box {
@@ -127,6 +156,10 @@
   @media (min-width: $tablet-width) {
     min-width: 167px;
     padding-top: 18px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 115px;
   }
 }
 
@@ -181,6 +214,10 @@
     display: flex;
     flex-wrap: wrap;
   }
+
+  @media (min-width: $tablet-width) {
+    max-width: 790px;
+  }
 }
 
 .form__option {
@@ -227,11 +264,19 @@ li.form__option--type:last-child {
     width: 45%;
     flex-grow: 1;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 30%;
+  }
 }
 
 li.form__option--checkbox:nth-child(2n) {
   @media (min-width: $tablet-width) {
     padding-left: 10px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 0;
   }
 }
 
@@ -399,6 +444,10 @@ li.form__option--checkbox:last-child {
     flex-direction: row-reverse;
     justify-content: space-between;
     align-items: center;
+  }
+  @media (min-width: $desktop-width) {
+    max-width: 700px;
+    margin: 0 auto;
   }
 }
 

@@ -5,9 +5,19 @@
   background-position: center -12%;
   min-height: 373px;
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/hero-mobile@2x.jpg");
+  }
+
   @media (min-width: $tablet-width) {
-    background-size: 83%;
+    background-image: url("../img/hero-desktop.jpg");
+    background-size: 83% auto;
     background-position: center 78%;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/hero-desktop@2x.jpg");
+    }
+
   }
 }
 

@@ -14,7 +14,11 @@
     <div class="page-header__inner">
       <nav class="main-nav main-nav--closed main-nav--nojs">
         <a class="page-header__logo logo">
-          <img class="page-header__logo-image" src="img/mishka-logo-mobile.svg" width="86" height="35" alt="Логотип магазина Мишка">
+          <picture>
+            <source media="(min-width: 1150px)" srcset="img/mishka-logo-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/mishka-logo-tablet.svg">
+            <img class="page-header__logo-image" src="img/mishka-logo-mobile.svg" width="86" height="35" alt="Логотип магазина Мишка">
+          </picture>
         </a>
         <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
@@ -104,7 +108,11 @@
         </li>
       </ul>
       <div class="week-top-leader__image">
-        <img class="week-top-leader__img" src="img/triple-set-mobile.png" alt="Вязанные корзинки">
+        <picture>
+          <source media="(min-width: 1150px)" srcset="img/triple-set-desktop.jpg 1x, img/triple-set-desktop@2x.jpg 2x">
+          <source media="(min-width: 768px)" srcset="img/triple-set-tablet.jpg 1x, img/triple-set-tablet@2x.jpg 2x">
+          <img class="week-top-leader__img" src="img/triple-set-mobile.jpg" srcset="img/triple-set-mobile@2x.jpg 2x" alt="Вязанные корзинки">
+        </picture>
       </div>
       <p class="week-top-leader__price">
         Цена: 990 руб.

@@ -79,7 +79,11 @@
       <ul class="catalog__list">
         <li class="catalog__item">
           <div class="catalog__item-image">
-            <img src="img/bunny-mobile.jpg" width="260" height="195" alt="Игрушка «Зайчик-попрыгайчик»">
+            <picture>
+              <source media="(min-width: 1150px)" srcset="img/bunny-desktop.jpg 1x, img/bunny-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/bunny-tablet.jpg 1x, img/bunny-tablet@2x.jpg 2x">
+              <img src="img/bunny-mobile.jpg" srcset="img/bunny-mobile@2x.jpg 2x" width="260" height="195" alt="Игрушка «Зайчик-попрыгайчик»">
+            </picture>
           </div>
           <div class="catalog__item-text">
             <h3 class="catalog__item-title item-title">Зайчик-попрыгайчик</h3>
@@ -96,7 +100,13 @@
         </li>
         <li class="catalog__item">
           <div class="catalog__item-image">
-            <img src="img/basket-laundry-mobile.jpg" width="260" height="195" alt="Корзинка для белья">
+            <picture>
+              <source media="(min-width: 1150px)" srcset="img/basket-laundry-desktop.jpg 1x, img/basket-laundry-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/basket-laundry-tablet.jpg 1x, img/basket-laundry-tablet@2x.jpg 2x">
+              <img src="img/basket-laundry-mobile.jpg" srcset="img/basket-laundry-mobile@2x.jpg 2x" width="260" height="195" alt="Корзинка для белья">
+            </picture>
+
+
           </div>
           <div class="catalog__item-text">
             <h3 class="catalog__item-title item-title">Корзинка для белья</h3>
@@ -113,7 +123,13 @@
         </li>
         <li class="catalog__item">
           <div class="catalog__item-image">
-            <img src="img/basket-toys-mobile.jpg" width="260" height="195" alt="Большая корзинка для игрушек">
+            <picture>
+              <source media="(min-width: 1150px)" srcset="img/basket-toys-desktop.jpg 1x, img/basket-toys-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/basket-toys-tablet.jpg 1x, img/basket-toys-tablet@2x.jpg 2x">
+              <img src="img/basket-toys-mobile.jpg" srcset="img/basket-toys-mobile@2x.jpg 2x" width="260" height="195" alt="Большая корзинка для игрушек">
+            </picture>
+
+
           </div>
           <div class="catalog__item-text">
             <h3 class="catalog__item-title item-title">Большая корзинка для игрушек</h3>

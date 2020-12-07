@@ -1,5 +1,23 @@
 .reviews__wrapper {
   @media (min-width: $tablet-width) {
+    background-color: $grey;
+    background-image: url("../img/bg-review-tablet.jpg");
+    background-repeat: no-repeat;
+    background-position: left center;
+
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/bg-review-tablet@2x.jpg");
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    background-position: 50px center;
+  }
+}
+
+.reviews__inner {
+  @media (min-width: $tablet-width) {
     display: grid;
     margin: auto;
     padding-top: 76px;

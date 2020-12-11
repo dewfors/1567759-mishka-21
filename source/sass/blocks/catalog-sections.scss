@@ -1,47 +1,57 @@
-.catalog-sections {
+.catalog-sections__wrapper {
   background-color: $gray-fc;
   background-image: url("../img/hero-mobile.jpg");
   background-repeat: no-repeat;
-  background-position: center -12%;
+  background-position: center -15%;
   min-height: 373px;
+  padding-top: 47px;
 
   @media (min-resolution: 2dppx) {
     background-image: url("../img/hero-mobile@2x.jpg");
   }
 
   @media (min-width: $tablet-width) {
+    margin-top: -63px;
     background-image: url("../img/hero-desktop.jpg");
-    background-size: 83% auto;
-    background-position: center 78%;
+    background-size: 1150px 100%;
+    background-position: center 5px;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/hero-desktop@2x.jpg");
     }
   }
+
+  @media (min-width: $desktop-width) {
+    //margin-top: -63px;
+    background-size: 1150px 100%;
+    background-position: center 10px;
+  }
 }
 
-.catalog-sections__wrapper {
-  padding-top: 47px;
-  //padding-bottom: 50px;
-}
+
 
 .catalog-sections__intro {
-  margin-bottom: 120px;
+  width: 260px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 118px;
   color: $black;
   text-align: center;
 
   @include font(27px, 30px, 700);
 
   @media (min-width: $tablet-width) {
-    margin-top: 64px;
+    width: 500px;
+    margin-top: 108px;
     margin-bottom: 372px;
 
     @include font(43px, 50px, 700);
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 64px;
-    margin-bottom: 360px;
+    width: 620px;
+    margin-top: 111px;
+    margin-bottom: 356px;
 
     @include font(53px, 57px, 700);
   }
@@ -61,17 +71,26 @@
 }
 
 .catalog-sections__item {
-  padding: 24px 0 19px 30px;
+  padding: 23px 30px 19px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 
   @media (min-width: $tablet-width) {
     padding: 26px 0 19px 36px;
   }
 
+  @media (min-width: $desktop-width) {
+    padding: 26px 0 10px 36px;
+  }
+
   &--light {
+    padding-right: 35px;
     background-color: $greenlight;
   }
 
   &--dark {
+    padding-right: 35px;
     background-color: $greendark;
   }
 }
@@ -81,4 +100,12 @@
   color: $white;
 
   @include font(19px, 24px, 700);
+
+  @media (min-width: $tablet-width) {
+    @include font(20px, 30px, 700);
+  }
+}
+
+.catalog-sections__image{
+  fill: $greenblack;
 }

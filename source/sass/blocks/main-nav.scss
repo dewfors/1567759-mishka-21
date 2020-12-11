@@ -24,7 +24,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    grid-template-columns: 210px 210px 283px 100px 247px;
+    grid-template-columns: 210px 210px 280px 100px 250px;
     grid-template-areas:
       "nav nav logo user user"
       "news news empty text text";

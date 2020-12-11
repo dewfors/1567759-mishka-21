@@ -1,5 +1,5 @@
 .week-top-leader__wrapper {
-  padding: 31px 30px 35px;
+  padding: 31px 0 35px;
 
   @media (min-width: $tablet-width) {
     //padding: 0;
@@ -30,6 +30,7 @@
 }
 
 .week-top-leader__title {
+  @include font(25px, 30px, 700);
   letter-spacing: -1px;
 
   @media (min-width: $tablet-width) {
@@ -41,7 +42,7 @@
   //margin: 0;
   margin-top: 5px;
   color: $greenlight;
-  text-align: center;
+  text-align: left;
   text-transform: uppercase;
 
   @include font(17px, 20px, 700);

@@ -71,7 +71,7 @@
 }
 
 .catalog-sections__item {
-  padding: 23px 30px 19px 30px;
+  padding: 21px 30px 20px 30px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -90,7 +90,7 @@
   }
 
   &--dark {
-    padding-right: 35px;
+    padding-right: 30px;
     background-color: $greendark;
   }
 }

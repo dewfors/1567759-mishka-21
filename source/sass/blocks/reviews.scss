@@ -34,6 +34,7 @@
 }
 
 .reviews__title {
+  @include font(25px, 30px, 700);
   @media (min-width: $tablet-width) {
     grid-area: header;
   }
@@ -54,7 +55,7 @@
 
 .reviews__item {
   margin: 0;
-  margin-bottom: 27px;
+  margin-bottom: 30px;
 }
 
 .reviews__text {
@@ -94,7 +95,7 @@
 
 .reviews__buttons {
   display: flex;
-  margin-bottom: 33px;
+  margin-bottom: 37px;
 
   @media (min-width: $tablet-width) {
     position: absolute;
@@ -112,7 +113,9 @@
 
 .reviews__button {
   width: 50%;
-  border: none;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border: 1px solid $grayborder;
 }
 
 .reviews__button--prev {

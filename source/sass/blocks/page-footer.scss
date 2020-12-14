@@ -25,10 +25,16 @@
   justify-content: center;
 }
 
-.page-footer__copyright {
+.page-footer__copyright{
+  display: flex;
+  justify-content: center;
+}
+
+.page-footer__copyright-box {
   width: 200px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   margin: auto;
   padding-top: 39px;
 

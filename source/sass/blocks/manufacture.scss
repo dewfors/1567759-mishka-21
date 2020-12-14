@@ -1,8 +1,9 @@
 .manufacture__wrapper {
-  padding: 0 30px 26px;
+  //padding: 0 30px 26px;
 }
 
 .manufacture__inner {
+  padding-bottom: 90px;
   border: 1px solid $grayborder;
 
   @media (min-width: $tablet-width) {
@@ -26,11 +27,25 @@
 }
 
 .manufacture__title-box {
-  padding: 20px;
+  //padding: 20px;
+  padding-top: 7px;
+  padding-left: 33px;
+  padding-right: 33px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 
   @media (min-width: $tablet-width) {
     grid-area: m-title;
   }
+}
+
+.manufacture__video-icon{
+  padding-top: 8px;
+}
+
+.manufacture__title{
+  margin-left: 25px;
 }
 
 .manufacture__video {
@@ -40,11 +55,19 @@
 }
 
 .manufacture__description {
-  padding: 35px 35px 40px;
+  padding: 0 30px;
+  padding-top: 12px;
+  margin-bottom: 40px;
 
   @include font(13px, 24px, 400);
 
   @media (min-width: $desktop-width) {
     grid-area: m-descr;
   }
+}
+
+
+.manufacture__order-link{
+  width: 190px;
+  margin: 0 auto;
 }

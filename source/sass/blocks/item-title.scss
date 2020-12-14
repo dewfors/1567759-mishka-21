@@ -2,8 +2,16 @@
   color: $black;
 
   @include font(17px, 24px, 700);
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+  }
 }
 
 .item-title--price {
   font-size: 15px;
+
+  @media (min-width: $tablet-width) {
+    @include font(17px, 24px, 700);
+  }
 }

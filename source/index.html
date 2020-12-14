@@ -413,44 +413,46 @@
   </section>
 
   <section class="contacts">
-    <div class="contacts__wrapper container">
-      <div class="contacts__title-wrapper">
-        <h2 class="contacts__title section-title section-title--small">Контакты</h2>
-        <div class="contacts__title-icon">
-          <svg width="47" height="81" viewBox="0 0 47 81" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M7.76611 3.86183V42.3812L47 23.072L7.76611 3.86183ZM0 80.9005V0H3.83261V80.9005H0Z" fill="#63D1BB"/>
-            <path d="M3.83262 0.0996094H0V81.0001H3.83262V0.0996094Z" fill="#231F20"/>
-          </svg>
+    <div class="contacts__wrapper">
+      <div class="container">
+        <div class="contacts__inner">
+          <div class="contacts__title-wrapper">
+            <h2 class="contacts__title section-title section-title--small">Контакты</h2>
+            <div class="contacts__title-icon">
+              <svg width="47" height="81">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-flag"></use>
+              </svg>
+            </div>
+          </div>
+          <ul class="contacts__details-list">
+            <li class="contacts__details-item characteristic__item">
+              <div class="contacts__key section-description__keys">e-mail:</div>
+              <div class="contacts__value section-description__keys">
+                <a class="contacts__link" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
+              </div>
+            </li>
+            <li class="contacts__details-item characteristic__item">
+              <div class="contacts__key section-description__keys">адрес:</div>
+              <div class="contacts__value">
+                <address class="contacts__address section-description__keys">
+                  г. Санкт-Петербург<br> ул. Большая Конюшенная <br> д. 19/8, офис 101
+                </address>
+              </div>
+            </li>
+          </ul>
+          <div class="contacts__map">
+            <picture>
+              <source media="(min-width: 1150px)" srcset="img/map-desktop.jpg 1x, img/map-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/map-tablet.jpg 1x, img/map-tablet@2x.jpg 2x">
+              <img class="contacts__map-image" src="img/map-mobile.jpg" srcset="img/map-mobile@2x.jpg 2x" width="320" height="455" alt="Схема проезда">
+            </picture>
+          </div>
+          <a class="contacts__write button" href="#">Напишите нам</a>
         </div>
       </div>
-      <ul class="contacts__details-list">
-        <li class="contacts__details-item characteristic__item">
-          <div class="contacts__key section-description__keys">e-mail:</div>
-          <div class="contacts__value section-description__keys">
-            <a class="contacts__link" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
-          </div>
-        </li>
-        <li class="contacts__details-item characteristic__item">
-          <div class="contacts__key section-description__keys">адрес:</div>
-          <div class="contacts__value">
-            <address class="contacts__address section-description__keys">
-              г. Санкт-Петербург<br> ул. Большая Конюшенная <br> д. 19/8, офис 101
-            </address>
-          </div>
-        </li>
-      </ul>
-      <div class="contacts__map">
-
-        <picture>
-          <source media="(min-width: 1150px)" srcset="img/map-desktop.jpg 1x, img/map-desktop@2x.jpg 2x">
-          <source media="(min-width: 768px)" srcset="img/map-tablet.jpg 1x, img/map-tablet@2x.jpg 2x">
-          <img class="contacts__map-image" src="img/map-mobile.jpg" srcset="img/map-mobile@2x.jpg 2x" width="320" height="455" alt="Схема проезда">
-        </picture>
-
-
-      </div>
-      <a class="contacts__write button" href="#">Напишите нам</a>
     </div>
+
+
   </section>
 
 </main>

@@ -1,8 +1,8 @@
 .contacts__wrapper {
-  padding: 89px 30px 40px;
+  padding: 89px 0 40px;
 
   @media (min-width: $tablet-width) {
-    padding: 152px 50px 55px;
+    padding: 127px 0 55px;
   }
 
   @media (min-width: $desktop-width) {
@@ -90,11 +90,20 @@
   //margin-bottom: 40px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 57px;
+    margin-left: -50px;
+    margin-right: -50px;
+    margin-bottom: 55px;
+
   }
 
   @media (min-width: $desktop-width) {
     grid-area: contacts-map;
+  }
+}
+
+.contacts__map-image{
+  @media (min-width: $tablet-width) {
+    width: 100%;
   }
 }
 

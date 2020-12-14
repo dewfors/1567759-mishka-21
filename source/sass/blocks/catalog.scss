@@ -39,7 +39,11 @@
 }
 
 .catalog__item {
-  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  //justify-content: space-between;
+  //align-items: center;
+  margin-bottom: 30px;
   border: 1px solid $grayborder;
 
   @media (min-width: $tablet-width) {
@@ -63,7 +67,7 @@
 }
 
 .catalog__item-image {
-  width: 100%;
+  //width: 100%;
 }
 
 .catalog__item-text {
@@ -74,4 +78,6 @@
 .catalog__item-price {
   margin: 0;
   padding-top: 27px;
+  display: flex;
+  justify-content: space-between;
 }

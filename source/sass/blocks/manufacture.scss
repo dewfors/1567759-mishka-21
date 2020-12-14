@@ -7,6 +7,7 @@
   border: 1px solid $grayborder;
 
   @media (min-width: $tablet-width) {
+    padding-bottom: 110px;
     display: grid;
     grid-template-rows: min-content min-content min-content;
     grid-template-areas:
@@ -37,21 +38,39 @@
 
   @media (min-width: $tablet-width) {
     grid-area: m-title;
+    justify-content: flex-start;
+    padding-top: 25px;
+    padding-left: 40px;
   }
 }
 
-.manufacture__video-icon{
+.manufacture__video-icon {
   padding-top: 8px;
 }
 
-.manufacture__title{
+.manufacture__title {
   margin-left: 25px;
+  @media (min-width: $tablet-width) {
+    margin-left: 35px;
+  }
 }
 
-.manufacture__video {
+.manufacture__video-box {
   @media (min-width: $desktop-width) {
     grid-area: m-video;
   }
+}
+
+.manufacture__video-image {
+  width: 100%;
+}
+
+.manufacture__video-img {
+  width: 100%;
+}
+
+.manufacture__video {
+  display: none;
 }
 
 .manufacture__description {
@@ -61,13 +80,25 @@
 
   @include font(13px, 24px, 400);
 
+  @media (min-width: $tablet-width) {
+    padding-top: 10px;
+    padding-left: 40px;
+    margin-bottom: 38px;
+
+    @include font(15px, 30px, 400);
+  }
+
   @media (min-width: $desktop-width) {
     grid-area: m-descr;
   }
 }
 
 
-.manufacture__order-link{
+.manufacture__order-link {
   width: 190px;
   margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 584px;
+  }
 }

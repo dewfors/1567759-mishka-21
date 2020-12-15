@@ -2,4 +2,8 @@
   color: $greyish;
 
   @include font(13px, 30px, 400);
+
+  @media (min-width: $tablet-width) {
+    font-size: 15px;
+  }
 }

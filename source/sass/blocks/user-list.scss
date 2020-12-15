@@ -46,6 +46,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    min-width: 84px;
     //width: 82px;
     //height: 82px;
   }
@@ -106,7 +107,8 @@
   @media (min-width: $tablet-width) {
     @include font(17px, 24px, 700);
   }
-  @media (min-width: $tablet-width) {
-    padding-right: 5px;
+  @media (min-width: $desktop-width) {
+    padding-left: 33px;
+    //padding-right: 5px;
   }
 }

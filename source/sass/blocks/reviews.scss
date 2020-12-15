@@ -1,6 +1,7 @@
 .reviews__wrapper {
   @media (min-width: $tablet-width) {
-    background-color: $grey;
+    padding-bottom: 15px;
+    //background-color: $grey;
     background-image: url("../img/bg-review-tablet.jpg");
     background-repeat: no-repeat;
     background-position: left center;
@@ -13,6 +14,7 @@
 
   @media (min-width: $desktop-width) {
     background-position: 50px center;
+
   }
 }
 
@@ -29,13 +31,22 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-left: 225px;
+    padding-bottom: 50px;
+    padding-left: 175px;
   }
 }
 
 .reviews__title {
+  @include font(25px, 30px, 700);
   @media (min-width: $tablet-width) {
+    padding-top: 5px;
     grid-area: header;
+
+    @include font(43px, 50px, 700);
+  }
+  @media (min-width: $tablet-width) {
+
+    @include font(53px, 57px, 700);
   }
 }
 
@@ -49,12 +60,13 @@
 
   @media (min-width: $desktop-width) {
     width: 810px;
+    padding-top: 20px;
   }
 }
 
 .reviews__item {
   margin: 0;
-  margin-bottom: 27px;
+  margin-bottom: 30px;
 }
 
 .reviews__text {
@@ -64,6 +76,7 @@
   @include font(15px, 30px, 400);
 
   @media (min-width: $tablet-width) {
+    margin-top: 15px;
     @include font(17px, 30px, 400);
   }
 
@@ -84,6 +97,9 @@
   @media (min-width: $tablet-width) {
     @include font(18px, 24px, 700);
   }
+  @media (min-width: $desktop-width) {
+    @include font(17px, 24px, 700);
+  }
 }
 
 .reviews__author-link {
@@ -94,12 +110,13 @@
 
 .reviews__buttons {
   display: flex;
-  margin-bottom: 33px;
+  justify-content: center;
+  margin-bottom: 37px;
 
   @media (min-width: $tablet-width) {
     position: absolute;
     right: 23px;
-    bottom: 25px;
+    bottom: 30px;
     width: 137px;
     margin-bottom: 0;
     justify-content: space-between;
@@ -111,8 +128,14 @@
 }
 
 .reviews__button {
-  width: 50%;
-  border: none;
+  width: 130px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border: 1px solid $grayborder;
+
+  @media (min-width: $tablet-width) {
+    border: none;
+  }
 }
 
 .reviews__button--prev {
@@ -122,9 +145,16 @@
 }
 
 .reviews__write {
+  margin: auto;
   @media (min-width: $tablet-width) {
+    margin-top: 0;
+    margin-right: 0;
     width: 175px;
     margin-left: auto;
     grid-area: button;
+  }
+  @media (min-width: $desktop-width) {
+    margin-top: 5px;
+
   }
 }

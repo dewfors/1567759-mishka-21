@@ -7,19 +7,18 @@
 
   @media (min-width: $desktop-width) {
     order: 4;
-    //width: 50%;
     display: flex;
     justify-content: flex-start;
-    //grid-area: news;
   }
 }
 
-.news-list__item{
+.news-list__item {
   @media (min-width: $desktop-width) {
     padding-right: 62px;
   }
 }
-.news-list__link{
+
+.news-list__link {
   @media (min-width: $desktop-width) {
     @include font(15px, 24px, 700);
   }

@@ -12,8 +12,9 @@
   align-items: center;
 }
 
-.social__item{
+.social__item {
   padding-top: 15px;
+
   @media (min-width: $tablet-width) {
     padding-top: 8px;
   }

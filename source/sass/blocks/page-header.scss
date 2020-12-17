@@ -5,11 +5,7 @@
 .page-header__logo {
   display: block;
   min-height: 80px;
-  //position: absolute;
-  //left: 50%;
-  //top: 50%;
-  //transform: translate(-50%, -50%);
-  //
+
   @media (min-width: $tablet-width) {
     flex-grow: 1;
     min-width: 318px;
@@ -21,19 +17,9 @@
   }
 
   @media (min-width: $desktop-width) {
-    //flex-grow: 0;
-    //order: 2;
-    //justify-content: center;
     padding-left: 30px;
   }
 }
-
-//.page-header__button {
-//  //min-height: 100px;
-//  display: flex;
-//  justify-content: center;
-//  align-items: center;
-//}
 
 .page-header__logo-image {
   width: 86px;
@@ -47,6 +33,7 @@
     margin: 0;
     padding: 0;
   }
+
   @media (min-width: $desktop-width) {
     width: 150px;
   }

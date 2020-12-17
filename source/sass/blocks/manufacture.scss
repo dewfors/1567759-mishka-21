@@ -79,6 +79,15 @@
 
 .manufacture__video-image {
   width: 100%;
+  position: relative;
+}
+
+.manufacture__icon-play {
+  width: 247px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
 }
 
 .manufacture__video-img {
@@ -112,7 +121,7 @@
   }
 }
 
-.manufacture__order-box{
+.manufacture__order-box {
   @media (min-width: $tablet-width) {
     padding-left: 21px;
   }

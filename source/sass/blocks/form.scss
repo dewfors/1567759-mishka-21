@@ -88,6 +88,10 @@
   @media (min-width: $tablet-width) {
     padding-bottom: 29px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 49px;
+  }
 }
 
 .form__group--fio {
@@ -132,6 +136,7 @@
   }
   @media (min-width: $desktop-width) {
     max-width: 935px;
+    padding-bottom: 18px;
   }
 }
 
@@ -329,6 +334,9 @@ li.form__option--checkbox:last-child {
 
   @media (min-width: $tablet-width) {
     padding-right: 22px;
+  }
+  @media (min-width: $desktop-width) {
+    padding-right: 5px;
   }
 }
 

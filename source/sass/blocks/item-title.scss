@@ -14,4 +14,9 @@
   @media (min-width: $tablet-width) {
     @include font(17px, 24px, 700);
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+    padding-bottom: 10px;
+  }
 }

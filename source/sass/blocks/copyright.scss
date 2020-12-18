@@ -1,13 +1,7 @@
 .copyright__text {
-  //margin-right: 27px;
-  //margin-left: 10px;
   color: $black;
 
   @include font(19px, 18px, 700);
-
-  @media (min-width: $tablet-width) {
-    margin-left: 18px;
-  }
 }
 
 .copyright__link {
@@ -15,7 +9,7 @@
   height: 35px;
 }
 
-.copyright-htmlacademy-logo{
+.copyright-htmlacademy-logo {
   width: 40px;
   height: 40px;
   fill: $greenlight;

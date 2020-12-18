@@ -2,7 +2,6 @@
   margin: 0;
   padding: 0;
   list-style: none;
-  //grid-area: user;
   display: flex;
   flex-direction: column;
 
@@ -11,31 +10,9 @@
     min-width: 350px;
     flex-direction: row;
     border-bottom: 1px solid $grayborder;
-    //justify-content: space-around;
-    //border-bottom: 1px solid $grayborder;
-  }
-
-  @media (min-width: $desktop-width) {
-    //flex-grow: 0;
-    //order: 3;
-    //width: 30px;
   }
 }
 
-//.user-list__item {
-//  @media (min-width: $tablet-width) {
-//    //padding: 41px;
-//    border-left: 1px solid $grayborder;
-//    //border-bottom: 1px solid $grayborder;
-//  }
-//
-//  @media (min-width: $desktop-width) {
-//    //padding: 41px;
-//    border-left: 1px solid $grayborder;
-//    border-bottom: 1px solid $grayborder;
-//  }
-//}
-//
 .user-list__item-search {
   @media (min-width: $tablet-width) {
     min-width: 88px;
@@ -47,15 +24,8 @@
 
   @media (min-width: $desktop-width) {
     min-width: 84px;
-    //width: 82px;
-    //height: 82px;
   }
 }
-
-//.user-list__link {
-//  display: flex;
-//  //justify-content: flex-start;
-//}
 
 .user-list__link-search {
   min-height: 88px;
@@ -63,6 +33,7 @@
   display: flex;
   justify-content: flex-start;
   align-items: center;
+
   @media (min-width: $tablet-width) {
     justify-content: center;
   }
@@ -70,13 +41,13 @@
 
 .user-list__link-search-text {
   padding-left: 30px;
+
   @media (min-width: $tablet-width) {
     display: none;
   }
 }
 
 .user-list__item-cart {
-
   @media (min-width: $tablet-width) {
     min-width: 262px;
     flex-grow: 1;
@@ -89,13 +60,9 @@
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  @media (min-width: $tablet-width) {
-
-  }
 }
 
 .user-list__icon--cart {
-  //margin-left: 20px;
   @media (min-width: $tablet-width) {
     margin-left: 30px;
   }
@@ -103,12 +70,12 @@
 
 .user-list__text--cart {
   padding-left: 30px;
-  //margin: 0;
+
   @media (min-width: $tablet-width) {
     @include font(17px, 24px, 700);
   }
+
   @media (min-width: $desktop-width) {
     padding-left: 33px;
-    //padding-right: 5px;
   }
 }

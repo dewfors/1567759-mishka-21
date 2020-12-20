@@ -77,12 +77,22 @@
   position: relative;
 }
 
-.manufacture__icon-play {
-  width: 247px;
+.manufacture__play-video-button {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.manufacture__icon-play {
+  width: 247px;
+  //position: absolute;
+  //top: 50%;
+  //left: 50%;
+  //transform: translate(-50%, -50%);
 }
 
 .manufacture__video-img {

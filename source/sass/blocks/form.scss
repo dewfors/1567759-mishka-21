@@ -385,21 +385,29 @@ li.form__option--checkbox:nth-child(2n) {
 
 .form__input--radio + .form__label::before {
   background-image: url("../img/radio-off.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
   background-size: contain;
 }
 
 .form__input--radio:checked + .form__label::before {
   background-image: url("../img/radio-on.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
   background-size: contain;
 }
 
 .form__input--checkbox + .form__label::before {
   background-image: url("../img/checkbox-off.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
   background-size: contain;
 }
 
 .form__input--checkbox:checked + .form__label::before {
   background-image: url("../img/checkbox-on.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
   background-size: contain;
 }
 

@@ -44,6 +44,14 @@
 
   @include font(17px, 24px, 700);
 
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
   @media (min-width: $tablet-width) {
     padding: 0;
 
@@ -58,5 +66,14 @@
 }
 
 .site-list__icon {
-  fill: $black;
+  fill: rgba($black, 0.2);
+}
+
+.site-list__link:hover .site-list__icon {
+  fill: $greenlight;
+  opacity: 1;
+}
+
+.site-list__link:active .site-list__icon {
+  fill: rgba($greenlight, 0.3);
 }

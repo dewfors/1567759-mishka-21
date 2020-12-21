@@ -137,7 +137,7 @@
           <p class="week-top-leader__price">
             Цена: 990 руб.
           </p>
-          <a class="week-top-leader__button button" href="order.html">Заказать</a>
+          <a class="week-top-leader__button button add-to-cart">Заказать</a>
         </div>
       </div>
     </div>
@@ -394,6 +394,32 @@
     </div>
   </div>
 </footer>
+
+<section class="modal modal__form-cart">
+  <div class="form-cart__wrapper">
+    <h2 class="form-cart__title">Добавить в корзину</h2>
+    <p class="form-cart__description">Выберите размер:</p>
+
+    <form class="form-cart" action="https://echo.htmlacademy.ru/" method="GET">
+
+      <ul class="form-cart__list">
+        <li class="form-cart__item">
+          <input class="visually-hidden form-cart__input--radio" type="radio" name="product-size" value="small" id="filter-small" checked>
+          <label class="form-cart__label" for="filter-small">s</label>
+        </li>
+        <li class="form-cart__item">
+          <input class="visually-hidden form-cart__input--radio" type="radio" name="product-size" value="middle" id="filter-middle">
+          <label class="form-cart__label" for="filter-middle">m</label>
+        </li>
+        <li class="form-cart__item">
+          <input class="visually-hidden form-cart__input--radio" type="radio" name="product-size" value="large" id="filter-large">
+          <label class="form-cart__label" for="filter-large">l</label>
+        </li>
+      </ul>
+      <button class="form-cart__button button" aria-label="Добавить в корзину">Добавить</button>
+    </form>
+  </div>
+</section>
 
 <svg style="display: none;" xmlns="http://www.w3.org/2000/svg">
   <symbol id="htmlacademy" viewBox="0 0 60 60">

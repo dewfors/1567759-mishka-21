@@ -68,10 +68,17 @@
 }
 
 .catalog-sections__item {
+  min-height: 119px;
   padding: 21px 30px 20px 30px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  &:hover {
+    transform: scaleY(1.03);
+    padding-top: 10px;
+    //min-height: 124px;
+  }
 
   @media (min-width: $tablet-width) {
     padding: 26px 0 19px 36px;
@@ -93,6 +100,7 @@
 }
 
 .catalog-sections__link {
+  flex-grow: 1;
   text-decoration: none;
   color: $white;
 
@@ -101,6 +109,10 @@
   @media (min-width: $tablet-width) {
     @include font(20px, 30px, 700);
   }
+}
+
+.catalog-sections__link:active + .catalog-sections__image{
+  opacity: 0.3;
 }
 
 .catalog-sections__image {

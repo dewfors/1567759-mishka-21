@@ -1,5 +1,5 @@
 .contacts__inner {
-  padding: 89px 0 40px;
+  padding: 87px 0 40px;
 
   @media (min-width: $tablet-width) {
     padding: 127px 0 55px;
@@ -115,6 +115,7 @@
 }
 
 .contacts__map-image {
+  margin: 0 auto;
   @media (min-width: $tablet-width) {
     width: 100%;
   }
@@ -125,11 +126,12 @@
 }
 
 .contacts__write {
+  margin: 0 auto;
   font-size: 18px;
 
   @media (min-width: $tablet-width) {
     width: 230px;
-    margin: 0 auto;
+    //margin: 0 auto;
   }
 
   @media (min-width: $desktop-width) {

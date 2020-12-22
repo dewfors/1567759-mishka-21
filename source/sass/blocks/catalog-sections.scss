@@ -2,7 +2,8 @@
   background-color: $gray-fc;
   background-image: url("../img/hero-mobile.jpg");
   background-repeat: no-repeat;
-  background-position: center -15%;
+  background-position: center -13%;
+  background-size: 320px;
   min-height: 373px;
   padding-top: 47px;
 
@@ -68,8 +69,8 @@
 }
 
 .catalog-sections__item {
-  min-height: 119px;
-  padding: 21px 30px 20px 30px;
+  min-height: 103px;
+  padding: 17px 30px 20px 30px;
   display: flex;
   justify-content: space-between;
   align-items: center;

@@ -390,12 +390,42 @@ li.form__option--checkbox:nth-child(2n) {
   background-size: contain;
 }
 
+.form__input--radio + .form__label:hover::before {
+  background-image: url("../img/radio-off-hover.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+}
+
+.form__input--radio + .form__label:active::before {
+  background-image: url("../img/radio-off-down.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+}
+
 .form__input--radio:checked + .form__label::before {
   background-image: url("../img/radio-on.svg");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: contain;
 }
+
+.form__input--radio:checked + .form__label:hover::before {
+  background-image: url("../img/radio-on-hover.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+}
+
+.form__input--radio:checked + .form__label:active::before {
+  background-image: url("../img/radio-on-down.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+}
+
+
 
 .form__input--checkbox + .form__label::before {
   background-image: url("../img/checkbox-off.svg");
@@ -404,12 +434,45 @@ li.form__option--checkbox:nth-child(2n) {
   background-size: contain;
 }
 
+.form__input--checkbox + .form__label:hover::before {
+  background-image: url("../img/checkbox-off-hover.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+}
+
+.form__input--checkbox + .form__label:active::before {
+  background-image: url("../img/checkbox-off-down.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+}
+
+
+
+
 .form__input--checkbox:checked + .form__label::before {
   background-image: url("../img/checkbox-on.svg");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: contain;
 }
+
+.form__input--checkbox:checked + .form__label:hover::before {
+  background-image: url("../img/checkbox-on-hover.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+}
+
+.form__input--checkbox:checked + .form__label:active::before {
+  background-image: url("../img/checkbox-on-down.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+}
+
+
 
 .form__input--background {
   @media (min-width: $tablet-width) {

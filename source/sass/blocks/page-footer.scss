@@ -27,6 +27,24 @@
   }
 }
 
+.page-footer__logo {
+  width: 102px;
+  //height: 34px;
+}
+
+.page-footer__icon {
+  width: 100%;
+
+  &:hover {
+    fill: $greenlight;
+  }
+
+  &:active {
+    fill: rgba($greenlight, 0.3);
+  }
+
+}
+
 .page-footer__social {
   height: 80px;
   display: flex;
@@ -49,4 +67,8 @@
   @media (min-width: $tablet-width) {
     padding-top: 0;
   }
+}
+
+.page-footer__icon-copyright {
+  fill: $greenlight;
 }

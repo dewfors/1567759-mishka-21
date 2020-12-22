@@ -308,8 +308,6 @@ li.form__option--checkbox:nth-child(2n) {
 }
 
 
-
-
 .form__box--nomargin {
   @media (min-width: $tablet-width) {
     margin-left: 0;
@@ -385,9 +383,10 @@ li.form__option--checkbox:nth-child(2n) {
     &::placeholder {
       color: $greyish;
     }
+
     border-bottom: 2px solid $greenlight;
   }
-  
+
   &:focus + .form__input-icon {
     fill: $greenlight;
     opacity: 1;
@@ -402,8 +401,6 @@ li.form__option--checkbox:nth-child(2n) {
 //.form__input:hover + .form__input-icon{
 //  fill: red;
 //}
-
-
 
 
 .form__input--check + .form__label::before {
@@ -526,6 +523,14 @@ li.form__option--checkbox:nth-child(2n) {
   border: 2px solid $greyish;
 
   @include font(17px, 18px, 400);
+
+  &:hover {
+    border: 2px solid $greenlight;
+  }
+
+  &:focus {
+    border: 2px solid $greenlight;
+  }
 
   @media (min-width: $tablet-width) {
     padding: 15px;

@@ -25,7 +25,7 @@
   @media (min-width: $desktop-width) {
     //margin-top: -63px;
     background-size: 1150px 100%;
-    background-position: center 10px;
+    background-position: center -5px;
   }
 }
 
@@ -50,7 +50,7 @@
   @media (min-width: $desktop-width) {
     width: 620px;
     margin-top: 111px;
-    margin-bottom: 356px;
+    margin-bottom: 340px;
 
     @include font(53px, 57px, 700);
   }
@@ -75,9 +75,13 @@
     background-position: center;
     background-size: 106% 100%;
     position: absolute;
-    bottom: 0px;
+    bottom: 0;
     z-index: 1;
+  }
 
+  @media (min-width: $desktop-width) {
+    height: 27px;
+    background-size: 110% 100%;
   }
 }
 
@@ -111,13 +115,18 @@
     &:hover {
       transform: scaleY(1.03);
       padding-top: 10px;
-      //min-height: 124px;
     }
 
   }
 
   @media (min-width: $desktop-width) {
     padding: 26px 0 10px 36px;
+    padding-top: 0;
+
+    &:hover {
+      transform: scaleY(1.03);
+      padding-top: 0px;
+    }
   }
 
   &--light {

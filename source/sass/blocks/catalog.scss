@@ -1,6 +1,7 @@
 .catalog__wrapper {
   @media (min-width: $tablet-width) {
     padding-top: 50px;
+
   }
 
   @media (min-width: $desktop-width) {
@@ -10,6 +11,8 @@
 
 .catalog__header {
   background-color: $gray;
+  margin-top: -65px;
+  padding-top: 65px;
 }
 
 .catalog__title-box {

@@ -1,6 +1,9 @@
 .manufacture__wrapper {
   padding-bottom: 90px;
 
+  @media (min-width: $tablet-width) {
+    padding-bottom: 0;
+  }
   @media (min-width: $desktop-width) {
     padding-bottom: 0;
   }

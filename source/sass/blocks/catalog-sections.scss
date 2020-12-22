@@ -15,7 +15,7 @@
     margin-top: -63px;
     background-image: url("../img/hero-desktop.jpg");
     background-size: 1150px 100%;
-    background-position: center 5px;
+    background-position: center -5px;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/hero-desktop@2x.jpg");
@@ -42,7 +42,7 @@
   @media (min-width: $tablet-width) {
     width: 500px;
     margin-top: 108px;
-    margin-bottom: 372px;
+    margin-bottom: 355px;
 
     @include font(43px, 50px, 700);
   }
@@ -53,6 +53,31 @@
     margin-bottom: 356px;
 
     @include font(53px, 57px, 700);
+  }
+}
+
+.catalog-sections__list-box {
+  position: relative;
+  @media (min-width: $tablet-width) {
+    padding-top: 15px;
+    overflow: hidden;
+  }
+}
+
+.catalog-sections__list-decoration {
+  display: none;
+  @media (min-width: $tablet-width) {
+    display: block;
+    width: 100%;
+    height: 24px;
+    background-image: url("../img/zigzag-fill-desktop.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 106% 100%;
+    position: absolute;
+    bottom: 0px;
+    z-index: 1;
+
   }
 }
 
@@ -75,14 +100,20 @@
   justify-content: space-between;
   align-items: center;
 
-  &:hover {
-    transform: scaleY(1.03);
-    padding-top: 10px;
-    //min-height: 124px;
-  }
+
 
   @media (min-width: $tablet-width) {
+    min-height: 130px;
     padding: 26px 0 19px 36px;
+    padding-top: 0;
+
+
+    &:hover {
+      transform: scaleY(1.03);
+      padding-top: 10px;
+      //min-height: 124px;
+    }
+
   }
 
   @media (min-width: $desktop-width) {
@@ -108,14 +139,20 @@
   @include font(19px, 24px, 700);
 
   @media (min-width: $tablet-width) {
+    //margin-top: -20px;
     @include font(20px, 30px, 700);
   }
 }
 
-.catalog-sections__link:active + .catalog-sections__image{
+.catalog-sections__link:active + .catalog-sections__image {
   opacity: 0.3;
 }
 
 .catalog-sections__image {
   fill: $greenblack;
+
+  @media (min-width: $tablet-width) {
+    //margin-top: -20px;
+  }
+
 }

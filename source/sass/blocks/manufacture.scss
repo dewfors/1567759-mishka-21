@@ -1,6 +1,18 @@
-.manufacture__inner {
+.manufacture__wrapper {
   padding-bottom: 90px;
+}
+
+.manufacture__inner {
+
   border: 1px solid $grayborder;
+
+  &:hover {
+    box-shadow: 0 6px 10px rgba($black, 0.1);
+  }
+
+  &:active {
+    box-shadow: 0 3px 5px rgba($black, 0.1);
+  }
 
   @media (min-width: $tablet-width) {
     padding-bottom: 110px;
@@ -88,11 +100,13 @@
 }
 
 .manufacture__icon-play {
-  width: 247px;
-  //position: absolute;
-  //top: 50%;
-  //left: 50%;
-  //transform: translate(-50%, -50%);
+  &:hover {
+    transform: scale(1.2);
+  }
+  
+  &:active {
+    transform: scale(0.8);
+  }
 }
 
 .manufacture__video-img {

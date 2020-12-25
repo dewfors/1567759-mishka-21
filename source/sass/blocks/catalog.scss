@@ -1,7 +1,6 @@
 .catalog__wrapper {
   @media (min-width: $tablet-width) {
     padding-top: 50px;
-
   }
 
   @media (min-width: $desktop-width) {
@@ -16,7 +15,6 @@
     margin-top: -65px;
     padding-top: 65px;
   }
-
 }
 
 .catalog__title-box {
@@ -30,19 +28,13 @@
   }
 
   @media (min-width: $desktop-width) {
-    //padding-top: 38px;
     padding-bottom: 95px;
   }
-
-
-
 }
 
 .catalog__title {
   text-align: center;
 }
-
-
 
 .catalog__decoration {
   display: none;
@@ -66,7 +58,6 @@
     bottom: -20px;
   }
 }
-
 
 .catalog__list {
   margin: 0;
@@ -98,7 +89,6 @@
   &:active {
     box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
   }
-
 
   @media (min-width: $tablet-width) {
     width: 100%;

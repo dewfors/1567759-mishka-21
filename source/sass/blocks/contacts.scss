@@ -96,8 +96,6 @@
   &:active {
     border-bottom: 1px solid rgba($green, 0.1);
   }
-
-
 }
 
 .contacts__map {
@@ -117,6 +115,7 @@
 
 .contacts__map-image {
   margin: 0 auto;
+
   @media (min-width: $tablet-width) {
     width: 100%;
   }
@@ -169,4 +168,3 @@
     padding-top: 87px;
   }
 }
-

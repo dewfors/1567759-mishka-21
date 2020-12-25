@@ -1,17 +1,7 @@
 .decoration {
   position: relative;
   display: none;
-
-  //@media (min-width: $tablet-width) {
-  //  display: block;
-  //  padding-top: 65px;
-  //}
-  //
-  //@media (min-width: $desktop-width) {
-  //  padding-top: 65px;
-  //}
 }
-
 
 .decoration__line {
   @media (min-width: $tablet-width) {
@@ -30,6 +20,5 @@
 
   @media (min-width: $tablet-width) {
     background-size: 120% 135%;
-
   }
 }

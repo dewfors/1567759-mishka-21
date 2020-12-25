@@ -9,6 +9,7 @@
 .form__wrapper--checkbox,
 .form__wrapper--input {
   background-color: $white;
+
   @media (min-width: $tablet-width) {
     background-color: $gray;
   }
@@ -303,18 +304,12 @@ li.form__option--checkbox:nth-child(2n) {
 
 .form__box {
   display: flex;
-  //border-bottom: 2px solid $black;
-
-  //&:hover {
-  //  border-bottom: 2px solid $greenlight;
-  //}
 
   @media (min-width: $tablet-width) {
     flex-grow: 1;
     margin-left: 25px;
   }
 }
-
 
 .form__box--nomargin {
   @media (min-width: $tablet-width) {
@@ -325,19 +320,15 @@ li.form__option--checkbox:nth-child(2n) {
 .form__box--icon {
   display: flex;
   position: relative;
-  //align-items: center;
-  //padding-right: 5px;
 
-
-  @media (min-width: $tablet-width) {
-    //padding-right: 22px;
-  }
-
-  @media (min-width: $desktop-width) {
-    //padding-right: 5px;
-  }
+  //@media (min-width: $tablet-width) {
+  //  //padding-right: 22px;
+  //}
+  //
+  //@media (min-width: $desktop-width) {
+  //  //padding-right: 5px;
+  //}
 }
-
 
 .form__box--dop {
   border: none;
@@ -374,7 +365,7 @@ li.form__option--checkbox:nth-child(2n) {
 
   @include font(17px, 18px, 400);
 
-  ::placeholder {
+  &::placeholder {
     color: $black;
     opacity: 0.3;
   }
@@ -392,7 +383,6 @@ li.form__option--checkbox:nth-child(2n) {
     &::placeholder {
       color: $greyish;
     }
-
     border-bottom: 2px solid $greenlight;
   }
 
@@ -406,11 +396,6 @@ li.form__option--checkbox:nth-child(2n) {
     font-size: 19px;
   }
 }
-
-//.form__input:hover + .form__input-icon{
-//  fill: red;
-//}
-
 
 .form__input--check + .form__label::before {
   content: "";
@@ -469,7 +454,6 @@ li.form__option--checkbox:nth-child(2n) {
   background-size: contain;
 }
 
-
 .form__input--checkbox + .form__label::before {
   background-image: url("../img/checkbox-off.svg");
   background-repeat: no-repeat;
@@ -491,7 +475,6 @@ li.form__option--checkbox:nth-child(2n) {
   background-size: contain;
 }
 
-
 .form__input--checkbox:checked + .form__label::before {
   background-image: url("../img/checkbox-on.svg");
   background-repeat: no-repeat;
@@ -512,7 +495,6 @@ li.form__option--checkbox:nth-child(2n) {
   background-position: center center;
   background-size: contain;
 }
-
 
 .form__input--background {
   @media (min-width: $tablet-width) {

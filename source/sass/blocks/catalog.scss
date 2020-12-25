@@ -5,29 +5,68 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 120px;
+    padding-top: 100px;
   }
 }
 
 .catalog__header {
   background-color: $gray;
-  margin-top: -65px;
-  padding-top: 65px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: -65px;
+    padding-top: 65px;
+  }
+
 }
 
 .catalog__title-box {
   padding-top: 74px;
   padding-bottom: 74px;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     padding-top: 38px;
     padding-bottom: 74px;
   }
+
+  @media (min-width: $desktop-width) {
+    //padding-top: 38px;
+    padding-bottom: 95px;
+  }
+
+
+
 }
 
 .catalog__title {
   text-align: center;
 }
+
+
+
+.catalog__decoration {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    width: 100%;
+    height: 24px;
+    background-image: url("../img/zigzag-fill-desktop.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 106% 100%;
+    position: absolute;
+    bottom: -10px;
+    z-index: 1;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 34px;
+    background-size: 100% 100%;
+    bottom: -20px;
+  }
+}
+
 
 .catalog__list {
   margin: 0;

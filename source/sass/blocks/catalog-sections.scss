@@ -23,7 +23,6 @@
   }
 
   @media (min-width: $desktop-width) {
-    //margin-top: -63px;
     background-size: 1150px 100%;
     background-position: center -5px;
   }
@@ -82,7 +81,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    height: 27px;
+    height: 34px;
     background-size: 110% 100%;
   }
 }
@@ -101,44 +100,11 @@
 }
 
 .catalog-sections__item {
-  //min-height: 103px;
-  //padding: 17px 30px 20px 30px;
-  //display: flex;
-  //justify-content: space-between;
-  //align-items: center;
-  //
-  //
-  //
-  //@media (min-width: $tablet-width) {
-  //  min-height: 130px;
-  //  padding: 26px 0 19px 36px;
-  //  padding-top: 0;
-  //
-  //
-  //  &:hover {
-  //    transform: scaleY(1.03);
-  //    padding-top: 10px;
-  //  }
-  //
-  //}
-  //
-  //@media (min-width: $desktop-width) {
-  //  padding: 26px 0 10px 36px;
-  //  padding-top: 0;
-  //
-  //  &:hover {
-  //    transform: scaleY(1.03);
-  //    padding-top: 0px;
-  //  }
-  //}
-  //
   &--light {
-    //padding-right: 35px;
     background-color: $greenlight;
   }
 
   &--dark {
-    //padding-right: 30px;
     background-color: $greendark;
   }
 }
@@ -151,26 +117,10 @@
   justify-content: space-between;
   align-items: center;
 
-  //flex-grow: 1;
-  //text-decoration: none;
-  //color: $white;
-  //
-  //@include font(19px, 24px, 700);
-  //
-  //@media (min-width: $tablet-width) {
-  //  //margin-top: -20px;
-  //  @include font(20px, 30px, 700);
-  //}
-
   @media (min-width: $tablet-width) {
     min-height: 130px;
-    //padding: 36px 0 19px 36px;
-    //padding-top: 0;
     padding-left: 36px;
-
-
   }
-
 
   &:hover {
     transform: translateY(-5px);
@@ -182,15 +132,13 @@
   }
 
   &--dark {
-    //padding-right: 30px;
     background-color: $greendark;
   }
-
 }
 
-//.catalog-sections__link:active + .catalog-sections__image {
-//  opacity: 0.3;
-//}
+.catalog-sections__link:active .catalog-sections__image {
+  opacity: 0.3;
+}
 
 .catalog-sections__link-title {
   margin-top: -5px;
@@ -203,14 +151,12 @@
 
     @include font(20px, 30px, 700);
   }
-
 }
 
 .catalog-sections__image {
   fill: $greenblack;
 
-  @media (min-width: $tablet-width) {
-    //margin-top: -20px;
-  }
-
+  //@media (min-width: $tablet-width) {
+  //  //margin-top: -20px;
+  //}
 }

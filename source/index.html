@@ -141,7 +141,7 @@
           <p class="week-top-leader__price">
             Цена: 990 руб.
           </p>
-          <a class="week-top-leader__button button add-to-cart">Заказать</a>
+          <a class="week-top-leader__button button">Заказать</a>
         </div>
         <div class="week-top-leader__decoration">
           <svg class="week-top-leader__decoration-line" width="1052" height="23" viewBox="0 0 1052 23" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -402,28 +402,28 @@
   </div>
 </footer>
 
-<section class="modal modal__form-cart">
-  <div class="form-cart__wrapper">
-    <h2 class="form-cart__title">Добавить в корзину</h2>
-    <p class="form-cart__description">Выберите размер:</p>
+<section class="popup popup__cart">
+  <div class="popup__cart-wrapper">
+    <h2 class="popup__cart-title">Добавить в корзину</h2>
+    <p class="popup__cart-description">Выберите размер:</p>
 
-    <form class="form-cart" action="https://echo.htmlacademy.ru/" method="GET">
+    <form class="popup__cart-form" action="https://echo.htmlacademy.ru/" method="GET">
 
-      <ul class="form-cart__list">
-        <li class="form-cart__item">
-          <input class="visually-hidden form-cart__input--radio" type="radio" name="product-size" value="small" id="filter-small" checked>
-          <label class="form-cart__label" for="filter-small">s</label>
+      <ul class="popup__cart-list">
+        <li class="popup__cart-item">
+          <input class="visually-hidden popup__cart-input--radio" type="radio" name="product-size" value="small" id="filter-small" checked>
+          <label class="popup__cart-label" for="filter-small">s</label>
         </li>
-        <li class="form-cart__item">
-          <input class="visually-hidden form-cart__input--radio" type="radio" name="product-size" value="middle" id="filter-middle">
-          <label class="form-cart__label" for="filter-middle">m</label>
+        <li class="popup__cart-item">
+          <input class="visually-hidden popup__cart-input--radio" type="radio" name="product-size" value="middle" id="filter-middle">
+          <label class="popup__cart-label" for="filter-middle">m</label>
         </li>
-        <li class="form-cart__item">
-          <input class="visually-hidden form-cart__input--radio" type="radio" name="product-size" value="large" id="filter-large">
-          <label class="form-cart__label" for="filter-large">l</label>
+        <li class="popup__cart-item">
+          <input class="visually-hidden popup__cart-input--radio" type="radio" name="product-size" value="large" id="filter-large">
+          <label class="popup__cart-label" for="filter-large">l</label>
         </li>
       </ul>
-      <button class="form-cart__button button" aria-label="Добавить в корзину">Добавить</button>
+      <button class="popup__cart-button button" aria-label="Добавить в корзину">Добавить</button>
     </form>
   </div>
 </section>

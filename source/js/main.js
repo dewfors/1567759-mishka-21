@@ -13,18 +13,28 @@ navToggle.addEventListener('click', function() {
   }
 });
 
-const addToCartLinks = document.querySelectorAll('.add-to-cart');
-const addToCartPopup = document.querySelector('.modal__form-cart');
-const addToCartClose = document.querySelector('.form-cart__button');
+const addToCartLinkTopLeader = document.querySelector('.week-top-leader__button');
+const addToCartLinks = document.querySelectorAll('.button--control');
+const addToCartPopup = document.querySelector('.popup__cart');
+const addToCartClose = document.querySelector('.popup__cart-button');
 
-// console.log(addToCartLink);
+// console.log(addToCartLinkTopLeader);
+// console.log(addToCartLinks);
 
-for (let i = 0; i < addToCartLinks.length; i++) {
-  addToCartLinks[i].addEventListener("click",(evt) => {
+if (addToCartLinkTopLeader !== null){
+  addToCartLinkTopLeader.addEventListener("click", (evt) => {
     evt.preventDefault();
-    addToCartPopup.classList.add("modal-show");
+    addToCartPopup.classList.add("popup--show");
   });
+}
 
+if (addToCartLinks.length !== 0){
+  for (let i = 0; i < addToCartLinks.length; i++) {
+    addToCartLinks[i].addEventListener("click",(evt) => {
+      evt.preventDefault();
+      addToCartPopup.classList.add("popup--show");
+    });
+  }
 }
 
 addToCartClose.addEventListener("click",(evt) => {
@@ -33,5 +43,5 @@ addToCartClose.addEventListener("click",(evt) => {
   // добавляем в корзину
 
   //закрываем окно
-  addToCartPopup.classList.remove("modal-show");
+  addToCartPopup.classList.remove("popup--show");
 });

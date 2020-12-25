@@ -2,7 +2,7 @@
   padding: 87px 0 40px;
 
   @media (min-width: $tablet-width) {
-    padding: 135px 0 55px;
+    padding: 50px 0 55px;
   }
 
   @media (min-width: $desktop-width) {
@@ -158,3 +158,15 @@
     @include font(17px, 30px, 400);
   }
 }
+
+.contacts__decoration {
+  @media (min-width: $tablet-width) {
+    display: block;
+    padding-top: 85px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 65px;
+  }
+}
+

@@ -534,6 +534,7 @@ li.form__option--checkbox:nth-child(2n) {
   height: 143px;
   padding: 17px;
   border: 2px solid $greyish;
+  resize: none;
 
   @include font(17px, 18px, 400);
 

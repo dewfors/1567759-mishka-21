@@ -211,21 +211,12 @@
 }
 
 .week-top-leader__decoration {
-  display: none;
   @media (min-width: $tablet-width) {
-
     display: block;
-    padding-top: 50px;
-
-    overflow: hidden;
+    padding-top: 65px;
   }
 
   @media (min-width: $desktop-width) {
     padding-top: 65px;
   }
-}
-
-
-.week-top-leader__decoration-line {
-  width: 100%;
 }

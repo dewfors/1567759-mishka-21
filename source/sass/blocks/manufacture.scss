@@ -1,9 +1,29 @@
-.manufacture__inner {
-  padding-bottom: 90px;
-  border: 1px solid $grayborder;
+.manufacture__wrapper {
+  padding-bottom: 55px;
 
   @media (min-width: $tablet-width) {
-    padding-bottom: 110px;
+    padding-bottom: 65px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 100px;
+  }
+}
+
+.manufacture__inner {
+  padding-bottom: 33px;
+  border: 1px solid $grayborder;
+
+  &:hover {
+    box-shadow: 0 6px 10px rgba($black, 0.1);
+  }
+
+  &:active {
+    box-shadow: 0 3px 5px rgba($black, 0.1);
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 45px;
     display: grid;
     grid-template-rows: min-content min-content min-content;
     grid-template-areas:
@@ -14,7 +34,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-bottom: 52px;
+    padding-bottom: 0;
     grid-template-rows: 150px 190px min-content;
     grid-template-columns: 682px 1fr;
     grid-template-areas:
@@ -28,6 +48,7 @@
   padding-top: 7px;
   padding-left: 33px;
   padding-right: 33px;
+  padding-bottom: 15px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -37,6 +58,7 @@
     justify-content: flex-start;
     padding-top: 25px;
     padding-left: 40px;
+    padding-bottom: 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -77,12 +99,24 @@
   position: relative;
 }
 
-.manufacture__icon-play {
-  width: 247px;
+.manufacture__play-video-button {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.manufacture__icon-play {
+  &:hover {
+    transform: scale(1.2);
+  }
+
+  &:active {
+    transform: scale(0.8);
+  }
 }
 
 .manufacture__video-img {
@@ -95,7 +129,7 @@
 
 .manufacture__description {
   padding: 0 30px;
-  padding-top: 12px;
+  padding-top: 35px;
   margin-bottom: 40px;
 
   @include font(13px, 24px, 400);
@@ -118,6 +152,10 @@
 
 .manufacture__order-box {
   @media (min-width: $tablet-width) {
+    //padding-left: 21px;
+  }
+
+  @media (min-width: $desktop-width) {
     padding-left: 21px;
   }
 }
@@ -130,7 +168,7 @@
     width: 584px;
   }
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $desktop-width) {
     width: 230px;
   }
 }

@@ -2,13 +2,13 @@
   padding: 32px 0 35px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 63px;
-    padding-bottom: 64px;
+    padding-top: 42px;
+    padding-bottom: 0;
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 150px;
-    padding-bottom: 64px;
+    padding-top: 121px;
+    padding-bottom: 0;
   }
 }
 
@@ -205,5 +205,16 @@
   @media (min-width: $tablet-width) {
     margin-left: auto;
     margin-right: 58px;
+  }
+}
+
+.week-top-leader__decoration {
+  @media (min-width: $tablet-width) {
+    display: block;
+    padding-top: 65px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 90px;
   }
 }

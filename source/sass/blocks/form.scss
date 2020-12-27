@@ -6,6 +6,15 @@
   background-color: $gray;
 }
 
+.form__wrapper--checkbox,
+.form__wrapper--input {
+  background-color: $white;
+
+  @media (min-width: $tablet-width) {
+    background-color: $gray;
+  }
+}
+
 .form__title-box {
   margin: 0;
   padding-top: 74px;
@@ -295,7 +304,6 @@ li.form__option--checkbox:nth-child(2n) {
 
 .form__box {
   display: flex;
-  border-bottom: 2px solid $black;
 
   @media (min-width: $tablet-width) {
     flex-grow: 1;
@@ -311,16 +319,15 @@ li.form__option--checkbox:nth-child(2n) {
 
 .form__box--icon {
   display: flex;
-  align-items: center;
-  padding-right: 5px;
+  position: relative;
 
-  @media (min-width: $tablet-width) {
-    padding-right: 22px;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding-right: 5px;
-  }
+  //@media (min-width: $tablet-width) {
+  //  //padding-right: 22px;
+  //}
+  //
+  //@media (min-width: $desktop-width) {
+  //  //padding-right: 5px;
+  //}
 }
 
 .form__box--dop {
@@ -354,12 +361,34 @@ li.form__option--checkbox:nth-child(2n) {
   border: none;
   padding: 16px 0;
   background-color: transparent;
+  border-bottom: 2px solid black;
 
   @include font(17px, 18px, 400);
 
-  ::placeholder {
+  &::placeholder {
     color: $black;
     opacity: 0.3;
+  }
+
+  &:hover {
+    border-bottom: 2px solid $greenlight;
+  }
+
+  &:hover + .form__input-icon {
+    fill: $greenlight;
+    opacity: 1;
+  }
+
+  &:focus {
+    &::placeholder {
+      color: $greyish;
+    }
+    border-bottom: 2px solid $greenlight;
+  }
+
+  &:focus + .form__input-icon {
+    fill: $greenlight;
+    opacity: 1;
   }
 
   @media (min-width: $tablet-width) {
@@ -385,21 +414,85 @@ li.form__option--checkbox:nth-child(2n) {
 
 .form__input--radio + .form__label::before {
   background-image: url("../img/radio-off.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+}
+
+.form__input--radio + .form__label:hover::before {
+  background-image: url("../img/radio-off-hover.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+}
+
+.form__input--radio + .form__label:active::before {
+  background-image: url("../img/radio-off-down.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
   background-size: contain;
 }
 
 .form__input--radio:checked + .form__label::before {
   background-image: url("../img/radio-on.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+}
+
+.form__input--radio:checked + .form__label:hover::before {
+  background-image: url("../img/radio-on-hover.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+}
+
+.form__input--radio:checked + .form__label:active::before {
+  background-image: url("../img/radio-on-down.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
   background-size: contain;
 }
 
 .form__input--checkbox + .form__label::before {
   background-image: url("../img/checkbox-off.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+}
+
+.form__input--checkbox + .form__label:hover::before {
+  background-image: url("../img/checkbox-off-hover.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+}
+
+.form__input--checkbox + .form__label:active::before {
+  background-image: url("../img/checkbox-off-down.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
   background-size: contain;
 }
 
 .form__input--checkbox:checked + .form__label::before {
   background-image: url("../img/checkbox-on.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+}
+
+.form__input--checkbox:checked + .form__label:hover::before {
+  background-image: url("../img/checkbox-on-hover.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+}
+
+.form__input--checkbox:checked + .form__label:active::before {
+  background-image: url("../img/checkbox-on-down.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
   background-size: contain;
 }
 
@@ -412,6 +505,10 @@ li.form__option--checkbox:nth-child(2n) {
 .form__input-icon {
   fill: black;
   opacity: 0.3;
+  position: absolute;
+  top: 50%;
+  right: 5px;
+  transform: translateY(-50%);
 }
 
 .form__textarea {
@@ -419,8 +516,17 @@ li.form__option--checkbox:nth-child(2n) {
   height: 143px;
   padding: 17px;
   border: 2px solid $greyish;
+  resize: none;
 
   @include font(17px, 18px, 400);
+
+  &:hover {
+    border: 2px solid $greenlight;
+  }
+
+  &:focus {
+    border: 2px solid $greenlight;
+  }
 
   @media (min-width: $tablet-width) {
     padding: 15px;

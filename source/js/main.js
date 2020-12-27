@@ -12,3 +12,36 @@ navToggle.addEventListener('click', function() {
     navMain.classList.remove('main-nav--opened');
   }
 });
+
+const addToCartLinkTopLeader = document.querySelector('.week-top-leader__button');
+const addToCartLinks = document.querySelectorAll('.button--control');
+const addToCartPopup = document.querySelector('.popup__cart');
+const addToCartClose = document.querySelector('.popup__cart-button');
+
+// console.log(addToCartLinkTopLeader);
+// console.log(addToCartLinks);
+
+if (addToCartLinkTopLeader !== null){
+  addToCartLinkTopLeader.addEventListener("click", (evt) => {
+    evt.preventDefault();
+    addToCartPopup.classList.add("popup--show");
+  });
+}
+
+if (addToCartLinks.length !== 0){
+  for (let i = 0; i < addToCartLinks.length; i++) {
+    addToCartLinks[i].addEventListener("click",(evt) => {
+      evt.preventDefault();
+      addToCartPopup.classList.add("popup--show");
+    });
+  }
+}
+
+addToCartClose.addEventListener("click",(evt) => {
+  evt.preventDefault();
+
+  // добавляем в корзину
+
+  //закрываем окно
+  addToCartPopup.classList.remove("popup--show");
+});

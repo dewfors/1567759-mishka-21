@@ -1,0 +1,129 @@
+.popup {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.popup__cart {
+  display: none;
+}
+
+.popup--show {
+  display: flex;
+  justify-content: center;
+}
+
+.popup__cart-wrapper {
+  width: 100%;
+  min-width: 320px;
+  max-width: 566px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: $white;
+  padding: 30px 30px 45px;
+  border: 1px solid $grey;
+  box-shadow: 0 5px 10px rgba(0, 1, 1, 0.25);
+}
+
+.popup__cart-form {
+  width: 260px;
+
+  @media (min-width: $tablet-width) {
+    width: 350px;
+  }
+}
+
+.popup__cart-title {
+  margin-top: 0;
+  margin-bottom: 14px;
+
+  text-align: center;
+  color: $black;
+  text-transform: uppercase;
+
+  @include font(25px, 30px, 700);
+
+  @media (min-width: $tablet-width) {
+    @include font(30px, 57px, 700);
+  }
+}
+
+.popup__cart-description {
+  margin-top: 0;
+  margin-bottom: 20px;
+  text-align: center;
+  color: $greyish;
+
+  @include font(15px, 30px, 400);
+
+  @media (min-width: $tablet-width) {
+    @include font(17px, 30px, 400);
+  }
+}
+
+.popup__cart-list {
+  margin: 0;
+  margin-bottom: 30px;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+}
+
+.popup__cart-item {
+  margin-right: 7px;
+}
+
+.popup__cart-item:last-child {
+  margin-right: 0;
+}
+
+.popup__cart-label {
+  min-width: 82px;
+  min-height: 52px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border: 2px solid rgba($greyish, 0.1);
+
+  text-align: center;
+  text-transform: uppercase;
+  color: $greyish;
+
+  @include font(17px, 16px, 700);
+
+  &:hover {
+    border: 2px solid rgba($greyish, 0.3);
+  }
+
+  @media (min-width: $tablet-width) {
+    min-width: 112px;
+  }
+}
+
+.popup__cart-input--radio:checked + .popup__cart-label {
+  border: 2px solid $greenlight;
+}
+
+.popup__cart-button {
+  background-color: $greenlight;
+  border: none;
+  color: $white;
+
+  @include font(17px, 16px, 700);
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+  }
+}

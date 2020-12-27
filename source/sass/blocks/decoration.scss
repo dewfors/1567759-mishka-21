@@ -1,0 +1,24 @@
+.decoration {
+  position: relative;
+  display: none;
+}
+
+.decoration__line {
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 17px;
+
+    background-image: url("../img/zigzag-line-desktop.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 120% 100%;
+    bottom: -2px;
+    z-index: 1;
+  }
+
+  @media (min-width: $tablet-width) {
+    background-size: 120% 135%;
+  }
+}

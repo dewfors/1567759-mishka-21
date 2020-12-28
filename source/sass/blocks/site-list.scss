@@ -17,9 +17,11 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 375px;
+    //width: 375px;
+    width: 100%;
     padding: 0;
     border-bottom: 1px solid $grayborder;
+    justify-content: flex-start;
   }
 }
 
@@ -32,6 +34,15 @@
 
   @media (min-width: $desktop-width) {
     min-height: 62px;
+    padding-right: 35px;
+    border-right: 1px solid $grayborder;
+  }
+}
+
+li.site-list__item:last-child {
+  @media (min-width: $desktop-width) {
+    padding-left: 35px;
+    border-right: none;
   }
 }
 

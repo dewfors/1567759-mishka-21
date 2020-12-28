@@ -11,6 +11,12 @@
     flex-direction: row;
     border-bottom: 1px solid $grayborder;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+    padding-left: 175px;
+    border-bottom: 1px solid $grayborder;
+  }
 }
 
 .user-list__item-search {

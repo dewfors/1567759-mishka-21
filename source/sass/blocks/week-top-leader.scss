@@ -1,14 +1,26 @@
+.week-top-leader {
+  &::after {
+    content: "";
+    width: 100%;
+    height: 17px;
+    display: block;
+    background-image: url("../img/zigzag-line-desktop.svg");
+    background-size: contain;
+    background-repeat: repeat-x;
+  }
+}
+
 .week-top-leader__wrapper {
   padding: 32px 0 35px;
 
   @media (min-width: $tablet-width) {
     padding-top: 42px;
-    padding-bottom: 0;
+    padding-bottom: 50px;
   }
 
   @media (min-width: $desktop-width) {
     padding-top: 121px;
-    padding-bottom: 0;
+    padding-bottom: 50px;
   }
 }
 
@@ -120,8 +132,9 @@
 }
 
 .week-top-leader__item {
-  padding-top: 7px;
+  padding-top: 6px;
   padding-bottom: 13px;
+  border-bottom: 1px solid $grayborder;
 
   @media (min-width: $tablet-width) {
     width: 292px;
@@ -209,12 +222,12 @@
 }
 
 .week-top-leader__decoration {
-  @media (min-width: $tablet-width) {
-    display: block;
-    padding-top: 65px;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding-top: 90px;
-  }
+  //@media (min-width: $tablet-width) {
+  //  display: block;
+  //  padding-top: 65px;
+  //}
+  //
+  //@media (min-width: $desktop-width) {
+  //  padding-top: 90px;
+  //}
 }

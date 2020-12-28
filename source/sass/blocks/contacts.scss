@@ -1,8 +1,8 @@
 .contacts__inner {
-  padding: 87px 0 40px;
+  padding: 25px 0 40px;
 
   @media (min-width: $tablet-width) {
-    padding: 50px 0 55px;
+    padding: 48px 0 55px;
   }
 
   @media (min-width: $desktop-width) {
@@ -99,7 +99,7 @@
 }
 
 .contacts__map {
-  margin: 0 -30px 40px;
+  margin: 0 -30px 42px;
 
   @media (min-width: $tablet-width) {
     margin-left: -50px;
@@ -159,12 +159,12 @@
 }
 
 .contacts__decoration {
-  @media (min-width: $tablet-width) {
-    display: block;
-    padding-top: 85px;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding-top: 87px;
-  }
+  //@media (min-width: $tablet-width) {
+  //  display: block;
+  //  padding-top: 85px;
+  //}
+  //
+  //@media (min-width: $desktop-width) {
+  //  padding-top: 87px;
+  //}
 }

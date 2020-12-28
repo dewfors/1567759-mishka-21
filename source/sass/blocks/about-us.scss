@@ -1,9 +1,9 @@
 .about-us__wrapper {
-  padding-top: 38px;
+  padding-top: 20px;
   padding-bottom: 27px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 60px;
+    padding-top: 57px;
   }
 
   @media (min-width: $desktop-width) {
@@ -23,9 +23,12 @@
 .about-us__title {
   margin-bottom: 30px;
 
+  @include font(25px, 30px, 700);
 
   @media (min-width: $tablet-width) {
     margin-bottom: 44px;
+
+    @include font(43px, 50px, 700);
   }
 }
 

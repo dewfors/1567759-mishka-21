@@ -7,6 +7,10 @@
     background-image: url("../img/zigzag-line-desktop.svg");
     background-size: contain;
     background-repeat: repeat-x;
+
+    @media (min-width: $desktop-width) {
+      height: 23px;
+    }
   }
 }
 
@@ -19,8 +23,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 121px;
-    padding-bottom: 50px;
+    padding-top: 112px;
+    padding-bottom: 75px;
   }
 }
 

@@ -46,6 +46,13 @@
 
     @media (min-width: $tablet-width) {
       display: block;
+      //background-image: url("../img/zigzag-fill-desktop.svg");
+    }
+
+    @media (min-width: $desktop-width) {
+      //display: block;
+      height: 34px;
+      background-image: url("../img/zigzag-fill-desktop.svg");
     }
   }
 }
@@ -142,6 +149,11 @@
   @media (min-width: $tablet-width) {
     min-height: 130px;
     padding-left: 36px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 136px;
+    padding-bottom: 13px;
   }
 
   &:hover {

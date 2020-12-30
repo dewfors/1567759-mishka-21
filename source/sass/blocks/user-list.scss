@@ -9,13 +9,13 @@
     flex-grow: 1;
     min-width: 350px;
     flex-direction: row;
-    border-bottom: 1px solid $grayborder;
+    //border-bottom: 1px solid $grayborder;
   }
 
   @media (min-width: $desktop-width) {
     width: 100%;
     padding-left: 175px;
-    border-bottom: 1px solid $grayborder;
+    //border-bottom: 1px solid $grayborder;
   }
 }
 

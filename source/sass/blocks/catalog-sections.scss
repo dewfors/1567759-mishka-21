@@ -17,6 +17,7 @@
     background-image: url("../img/hero-desktop.jpg");
     background-size: 1150px 100%;
     background-position: center -5px;
+    border-top: 1px solid rgba($black, 0.1);
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/hero-desktop@2x.jpg");

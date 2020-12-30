@@ -1,9 +1,18 @@
 .form {
   padding-bottom: 50px;
+  border-top: 1px solid rgba($black, 0.1);
+
+
 }
 
 .form__wrapper--title {
+
   position: relative;
+
+  @media (min-width: $tablet-width) {
+    margin-top: -63px;
+    border-top: 1px solid rgba($black, 0.1);
+  }
 
   &::after {
     content: "";
@@ -52,13 +61,14 @@
   padding-bottom: 74px;
 
   @media (min-width: $tablet-width) {
-    margin-top: -63px;
+    //margin-top: -63px;
     padding-top: 102px;
     padding-bottom: 85px;
+
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: -62px;
+    //margin-top: -62px;
     padding-bottom: 114px;
   }
 }

@@ -20,8 +20,9 @@ const addToCartClose = document.querySelector('.popup__cart-button');
 
 // console.log(addToCartLinkTopLeader);
 // console.log(addToCartLinks);
+// console.log(addToCartClose);
 
-if (addToCartLinkTopLeader !== null){
+if (addToCartLinkTopLeader != null){
   addToCartLinkTopLeader.addEventListener("click", (evt) => {
     evt.preventDefault();
     addToCartPopup.classList.add("popup--show");
@@ -37,11 +38,14 @@ if (addToCartLinks.length !== 0){
   }
 }
 
-addToCartClose.addEventListener("click",(evt) => {
-  evt.preventDefault();
+if (addToCartClose != null){
+  addToCartClose.addEventListener("click",(evt) => {
+    evt.preventDefault();
 
-  // добавляем в корзину
+    // добавляем в корзину
 
-  //закрываем окно
-  addToCartPopup.classList.remove("popup--show");
-});
+    //закрываем окно
+    addToCartPopup.classList.remove("popup--show");
+  });
+}
+

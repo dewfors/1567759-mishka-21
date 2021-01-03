@@ -46,6 +46,8 @@
 
     @media (min-width: $tablet-width) {
       display: block;
+      background-size: cover;
+
       //background-image: url("../img/zigzag-fill-desktop.svg");
     }
 
@@ -53,6 +55,8 @@
       //display: block;
       height: 34px;
       background-image: url("../img/zigzag-fill-desktop.svg");
+      background-size: cover;
+
     }
   }
 }

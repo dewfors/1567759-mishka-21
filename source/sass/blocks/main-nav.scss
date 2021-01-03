@@ -9,17 +9,23 @@
   position: relative;
 
   @media (min-width: $tablet-width) {
-    grid-template-columns: min-content 1fr;
+    //grid-template-columns: min-content 1fr;
+    grid-template-columns: 47.6% 52.4%;
     grid-template-areas:
       "logo user"
       "nav text";
   }
 
   @media (min-width: $desktop-width) {
-    grid-template-columns: 210px 210px 280px 100px 250px;
+    //grid-template-columns: 210px 210px 280px 100px 250px;
+    //grid-template-areas:
+    //  "nav nav logo user user"
+    //  "news news empty text text";
+
+    grid-template-columns: 50% 50%;
     grid-template-areas:
-      "nav nav logo user user"
-      "news news empty text text";
+      "nav user"
+      "news text";
   }
 }
 
@@ -83,6 +89,7 @@
 
 .main-nav__text {
   display: none;
+  z-index: 10;
 
   @media (min-width: $tablet-width) {
     order: 2;
@@ -97,7 +104,8 @@
 
   @media (min-width: $desktop-width) {
     order: 5;
-    width: 50%;
+    //width: 50%;
+    width: 100%;
     grid-area: text;
   }
 }

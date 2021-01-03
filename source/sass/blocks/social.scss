@@ -1,5 +1,10 @@
 .social {
   margin: 0;
+  border-bottom: 1px solid $gray-e5;
+
+  @media (min-width: $tablet-width) {
+    border-bottom: none;
+  }
 }
 
 .social__list {
@@ -13,9 +18,21 @@
 }
 
 .social__item {
-  padding-top: 15px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  //padding-top: 15px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 8px;
+    //padding-top: 8px;
+  }
+}
+
+.social__link {
+  //height: inherit;
+  padding-top: 5px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 10px;
   }
 }

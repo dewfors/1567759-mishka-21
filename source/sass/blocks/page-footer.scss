@@ -23,12 +23,13 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 7px;
+    //padding-top: 7px;
   }
 }
 
 .page-footer__logo {
   width: 102px;
+  height: 80px;
 }
 
 .page-footer__icon {
@@ -40,6 +41,10 @@
 
   &:active {
     fill: rgba($greenlight, 0.3);
+  }
+
+  @media (min-width: $tablet-width) {
+    height: 80px;
   }
 }
 

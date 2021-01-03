@@ -21,11 +21,19 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 1px solid $grayborder;
+    //border-bottom: 1px solid $grayborder;
   }
 
   @media (min-width: $desktop-width) {
-    padding-left: 30px;
+    //padding-left: 30px;
+    position: absolute;
+    //display: none;
+    min-width: 150px;
+    width: 150px;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%);
+    border-bottom: none;
   }
 }
 

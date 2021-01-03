@@ -104,7 +104,7 @@
   @include font(17px, 16px, 700);
 
   &:hover {
-    border: 2px solid rgba($greyish, 0.3);
+    border-color: rgba($greyish, 0.3);
   }
 
   @media (min-width: $tablet-width) {

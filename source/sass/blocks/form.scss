@@ -1,12 +1,17 @@
 .form {
   padding-bottom: 50px;
   border-top: 1px solid rgba($black, 0.1);
+}
 
+.form__order.valid {
+  border: 2px solid green;
+}
 
+.form__order.invalid {
+  border: 2px solid red;
 }
 
 .form__wrapper--title {
-
   position: relative;
 
   @media (min-width: $tablet-width) {
@@ -19,7 +24,7 @@
     width: 100%;
     height: 24px;
     background-image: url("../img/zigzag-fill-tablet.svg");
-    background-size: 100% 100%;
+    background-size: cover;
     background-position: center;
     background-repeat: repeat-x;
     position: absolute;

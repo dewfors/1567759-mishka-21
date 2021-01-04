@@ -1,12 +1,17 @@
 .form {
   padding-bottom: 50px;
   border-top: 1px solid rgba($black, 0.1);
+}
 
+.form__order.valid {
+  border: 2px solid green;
+}
 
+.form__order.invalid {
+  border: 2px solid red;
 }
 
 .form__wrapper--title {
-
   position: relative;
 
   @media (min-width: $tablet-width) {

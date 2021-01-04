@@ -124,27 +124,27 @@
               </div>
               <ul class="form__list form__list--wrap">
                 <li class="form__option form__option--checkbox">
-                  <input class="visually-hidden form__input form__input--checkbox form__input--check" type="checkbox" name="white" id="product-color-white" checked>
+                  <input class="visually-hidden form__input form__input--checkbox form__input--check" type="checkbox" name="product-color-white" id="product-color-white" checked>
                   <label class="form__label form__label--check" for="product-color-white">Белый</label>
                 </li>
                 <li class="form__option form__option--checkbox">
-                  <input class="visually-hidden form__input form__input--checkbox form__input--check" type="checkbox" name="white" id="product-color-gray" checked>
+                  <input class="visually-hidden form__input form__input--checkbox form__input--check" type="checkbox" name="product-color-gray" id="product-color-gray" checked>
                   <label class="form__label form__label--check" for="product-color-gray">Серый</label>
                 </li>
                 <li class="form__option form__option--checkbox">
-                  <input class="visually-hidden form__input form__input--checkbox form__input--check" type="checkbox" name="white" id="product-color-tiffany">
+                  <input class="visually-hidden form__input form__input--checkbox form__input--check" type="checkbox" name="product-color-tiffany" id="product-color-tiffany">
                   <label class="form__label form__label--check" for="product-color-tiffany">&laquo;Тиффани&raquo;</label>
                 </li>
                 <li class="form__option form__option--checkbox">
-                  <input class="visually-hidden form__input form__input--checkbox form__input--check" type="checkbox" name="white" id="product-color-black">
+                  <input class="visually-hidden form__input form__input--checkbox form__input--check" type="checkbox" name="product-color-black" id="product-color-black">
                   <label class="form__label form__label--check" for="product-color-black">Черный</label>
                 </li>
                 <li class="form__option form__option--checkbox">
-                  <input class="visually-hidden form__input form__input--checkbox form__input--check" type="checkbox" name="white" id="product-color-pink">
+                  <input class="visually-hidden form__input form__input--checkbox form__input--check" type="checkbox" name="product-color-pink" id="product-color-pink">
                   <label class="form__label form__label--check" for="product-color-pink">Розовый</label>
                 </li>
                 <li class="form__option form__option--checkbox">
-                  <input class="visually-hidden form__input form__input--checkbox form__input--check" type="checkbox" name="white" id="product-color-orange">
+                  <input class="visually-hidden form__input form__input--checkbox form__input--check" type="checkbox" name="product-color-orange" id="product-color-orange">
                   <label class="form__label form__label--check" for="product-color-orange">Оранжевый</label>
                 </li>
 
@@ -166,21 +166,18 @@
                   <label for="first-name" class="form__label">Имя:</label>
                   <div class="form__box">
                     <input type="text" id="first-name" class="form__input" name="first-name" placeholder="Введите ваше имя*">
-                    <label class="visually-hidden" for="first-name">Бассейн</label>
                   </div>
                 </div>
                 <div class="form__row">
                   <label for="last-name" class="form__label">Фамилия:</label>
                   <div class="form__box">
                     <input type="text" id="last-name" class="form__input" name="last-name" placeholder="Укажите фамилию*">
-                    <label class="visually-hidden" for="last-name">Бассейн</label>
                   </div>
                 </div>
                 <div class="form__row">
                   <label for="patronym" class="form__label">Отчество:</label>
                   <div class="form__box">
                     <input type="text" id="patronym" class="form__input" name="patronym" placeholder="Отчество, если желаете">
-                    <label class="visually-hidden" for="patronym">Бассейн</label>
                   </div>
                 </div>
               </div>
@@ -199,7 +196,8 @@
               <div class="form__rows">
                 <div class="form__row">
                   <div class="form__box form__box--nomargin form__box--icon">
-                    <input type="tel" class="form__input form__input--contacts form__input--background" name="phone" placeholder="+7 XXX XXX XX XX*">
+                    <input type="tel" id="tel" class="form__input form__input--contacts form__input--background" name="phone" placeholder="+7 XXX XXX XX XX*">
+                    <label class="visually-hidden" for="tel">Телефон</label>
                     <svg class="form__input-icon" width="25" height="25">
                       <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-phone"></use>
                     </svg>
@@ -221,7 +219,8 @@
               <div class="form__rows">
                 <div class="form__row">
                   <div class="form__box form__box--nomargin form__box--icon">
-                    <input type="email" class="form__input form__input--contacts form__input--background" name="email" placeholder="Ваш Email*">
+                    <input type="email" id="email" class="form__input form__input--contacts form__input--background" name="email" placeholder="Ваш Email*">
+                    <label class="visually-hidden" for="email">email</label>
                     <svg class="form__input-icon" width="32" height="32">
                       <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-mail"></use>
                     </svg>

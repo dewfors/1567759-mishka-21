@@ -60,10 +60,6 @@ if (addToCartClose) {
 
 // Валидация формы
 const form = document.querySelector('.form__order');
-const firstName = form.querySelector('#first-name');
-const lastName = form.querySelector('#last-name');
-const tel = form.querySelector('#tel');
-const email = form.querySelector('#email');
 
 if (form) {
   form.addEventListener('submit', validateForm);
@@ -72,6 +68,11 @@ if (form) {
 function validateForm(evt) {
   //Отменяем отправку формы
   evt.preventDefault();
+
+  const firstName = form.querySelector('#first-name');
+  const lastName = form.querySelector('#last-name');
+  const tel = form.querySelector('#tel');
+  const email = form.querySelector('#email');
 
   const elements = Array.of(firstName, lastName, tel, email);
   const resultNotEmpty = [...elements].every(isEmpty);

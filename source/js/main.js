@@ -22,23 +22,32 @@ const addToCartClose = document.querySelector('.popup__cart-button');
 // console.log(addToCartLinks);
 // console.log(addToCartClose);
 
-if (addToCartLinkTopLeader != null) {
+if (addToCartLinkTopLeader) {
   addToCartLinkTopLeader.addEventListener("click", (evt) => {
     evt.preventDefault();
     addToCartPopup.classList.add("popup--show");
   });
 }
 
-if (addToCartLinks.length !== 0) {
-  for (let i = 0; i < addToCartLinks.length; i++) {
-    addToCartLinks[i].addEventListener("click", (evt) => {
+if (addToCartLinks.length) {
+
+  // for (let i = 0; i < addToCartLinks.length; i++) {
+  //   addToCartLinks[i].addEventListener("click", (evt) => {
+  //     evt.preventDefault();
+  //     addToCartPopup.classList.add("popup--show");
+  //   });
+  // }
+
+  addToCartLinks.forEach((link)=>{
+    link.addEventListener("click", (evt) => {
       evt.preventDefault();
       addToCartPopup.classList.add("popup--show");
     });
-  }
+  })
+
 }
 
-if (addToCartClose != null) {
+if (addToCartClose) {
   addToCartClose.addEventListener("click", (evt) => {
     evt.preventDefault();
 
@@ -51,18 +60,19 @@ if (addToCartClose != null) {
 
 // Валидация формы
 const form = document.querySelector('.form__order');
-const firstName = document.querySelector('#first-name');
-const lastName = document.querySelector('#last-name');
-const tel = document.querySelector('#tel');
-const email = document.querySelector('#email');
 
-if (form != null) {
+if (form) {
   form.addEventListener('submit', validateForm);
 }
 
 function validateForm(evt) {
   //Отменяем отправку формы
   evt.preventDefault();
+
+  const firstName = form.querySelector('#first-name');
+  const lastName = form.querySelector('#last-name');
+  const tel = form.querySelector('#tel');
+  const email = form.querySelector('#email');
 
   const elements = Array.of(firstName, lastName, tel, email);
   const resultNotEmpty = [...elements].every(isEmpty);
@@ -72,12 +82,12 @@ function validateForm(evt) {
   // console.log(resultValidEmail);
 
   if (resultNotEmpty && resultValidTel && resultValidEmail) {
-    this.classList.remove('invalid');
-    this.classList.add('valid');
+    this.classList.remove('form__order--invalid');
+    this.classList.add('form__order--valid');
     form.submit();
   } else {
-    this.classList.remove('valid');
-    this.classList.add('invalid');
+    this.classList.remove('form__order--valid');
+    this.classList.add('form__order--invalid');
     alert("Форма невалидна. Заполните обязательные поля корректными данными!")
   }
 

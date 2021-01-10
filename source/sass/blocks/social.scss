@@ -21,16 +21,9 @@
   height: 80px;
   display: flex;
   align-items: center;
-  //padding-top: 15px;
-
-  @media (min-width: $tablet-width) {
-    //padding-top: 8px;
-  }
 }
 
 .social__link {
-  //height: inherit;
-  //width: 22px;
   padding-top: 5px;
 
   @media (min-width: $tablet-width) {

@@ -21,10 +21,6 @@
     justify-content: center;
     align-items: center;
   }
-
-  @media (min-width: $desktop-width) {
-    //padding-top: 7px;
-  }
 }
 
 .page-footer__logo {
@@ -59,17 +55,6 @@
   display: flex;
   justify-content: center;
 }
-
-//.page-footer__copyright-box {
-//  width: 182px;
-//  display: flex;
-//  justify-content: space-between;
-//  align-items: center;
-//
-//  @media (min-width: $tablet-width) {
-//    padding-top: 0;
-//  }
-//}
 
 .page-footer__icon-copyright {
   width: 50px;

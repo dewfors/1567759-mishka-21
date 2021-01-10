@@ -8,8 +8,6 @@
 
   @media (min-width: $desktop-width) {
     padding-top: 65px;
-    //padding-left: 225px;
-    //padding-right: 225px;
   }
 }
 
@@ -41,12 +39,10 @@
   padding: 0;
   list-style: none;
 
-  //display: grid;
   display: flex;
   flex-direction: column;
 
   @media (min-width: $tablet-width) {
-    //grid-template-columns: 1fr 1fr;
     max-height: 500px;
     flex-wrap: wrap;
   }
@@ -64,7 +60,6 @@
 }
 
 .about-us__icon {
-  //display: none;
   position: absolute;
   top: 0;
   left: 9%;

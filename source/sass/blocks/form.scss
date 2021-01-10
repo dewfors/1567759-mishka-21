@@ -364,14 +364,6 @@ li.form__option--checkbox:nth-child(2n) {
 .form__box--icon {
   display: flex;
   position: relative;
-
-  @media (min-width: $tablet-width) {
-    //padding-right: 22px;
-  }
-
-  @media (min-width: $desktop-width) {
-    //padding-right: 5px;
-  }
 }
 
 .form__box--dop {

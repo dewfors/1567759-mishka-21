@@ -15,11 +15,11 @@
   <div class="page-header__wrapper container">
     <div class="page-header__inner">
       <nav class="main-nav main-nav--closed main-nav--nojs">
-        <a class="page-header__logo logo">
+        <a class="main-nav__logo logo">
           <picture>
             <source media="(min-width: 1150px)" srcset="img/mishka-logo-desktop.svg 1x">
             <source media="(min-width: 768px)" srcset="img/mishka-logo-tablet.svg 1x">
-            <img class="page-header__logo-image" src="img/mishka-logo-mobile.svg" width="86" height="35" alt="Логотип магазина Мишка">
+            <img class="main-nav__logo-image" src="img/mishka-logo-mobile.svg" width="86" height="35" alt="Логотип магазина Мишка">
           </picture>
         </a>
         <button class="main-nav__toggle" type="button">
@@ -294,7 +294,7 @@
         <div class="page-footer__social social">
           <ul class="social__list">
             <li class="social__item">
-              <a class="social__link" href="https://www.instagram.com/htmlacademy">
+              <a class="social__link social__link--insta" href="https://www.instagram.com/htmlacademy">
                 <span class="visually-hidden">Мы в Инстаграме</span>
                 <svg class="page-footer__icon" width="22" height="22">
                   <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-insta"></use>
@@ -302,7 +302,7 @@
               </a>
             </li>
             <li class="social__item">
-              <a class="social__link" href="https://www.facebook.com/htmlacademy">
+              <a class="social__link social__link--fb" href="https://www.facebook.com/htmlacademy">
                 <span class="visually-hidden">Мы в Фейсбуке</span>
                 <svg class="page-footer__icon" width="15" height="28">
                   <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-fb"></use>
@@ -310,7 +310,7 @@
               </a>
             </li>
             <li class="social__item">
-              <a class="social__link" href="https://twitter.com/htmlacademy">
+              <a class="social__link social__link--twitter" href="https://twitter.com/htmlacademy">
                 <span class="visually-hidden">Мы в Твиттере</span>
                 <svg class="page-footer__icon" width="23" height="20">
                   <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-twitter"></use>
@@ -321,7 +321,7 @@
           </ul>
         </div>
         <div class="page-footer__copyright copyright">
-          <div class="page-footer__copyright-box">
+          <div class="copyright__box">
             <b class="copyright__text">Разработано</b>
             <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
               <svg class="page-footer__icon page-footer__icon-copyright" width="27" height="35">
@@ -335,28 +335,28 @@
   </div>
 </footer>
 
-<section class="popup popup__cart">
-  <div class="popup__cart-wrapper">
-    <h2 class="popup__cart-title">Добавить в корзину</h2>
-    <p class="popup__cart-description">Выберите размер:</p>
+<section class="popup popup-cart">
+  <div class="popup-cart__wrapper">
+    <h2 class="popup-cart__title">Добавить в корзину</h2>
+    <p class="popup-cart__description">Выберите размер:</p>
 
-    <form class="popup__cart-form" action="https://echo.htmlacademy.ru/" method="GET">
+    <form class="popup-cart__form" action="https://echo.htmlacademy.ru/" method="GET">
 
-      <ul class="popup__cart-list">
-        <li class="popup__cart-item">
-          <input class="visually-hidden popup__cart-input--radio" type="radio" name="product-size" value="small" id="filter-small" checked>
-          <label class="popup__cart-label" for="filter-small">s</label>
+      <ul class="popup-cart__list">
+        <li class="popup-cart__item">
+          <input class="visually-hidden popup-cart__input-radio" type="radio" name="product-size" value="small" id="filter-small" checked>
+          <label class="popup-cart__label" for="filter-small">s</label>
         </li>
-        <li class="popup__cart-item">
-          <input class="visually-hidden popup__cart-input--radio" type="radio" name="product-size" value="middle" id="filter-middle">
-          <label class="popup__cart-label" for="filter-middle">m</label>
+        <li class="popup-cart__item">
+          <input class="visually-hidden popup-cart__input-radio" type="radio" name="product-size" value="middle" id="filter-middle">
+          <label class="popup-cart__label" for="filter-middle">m</label>
         </li>
-        <li class="popup__cart-item">
-          <input class="visually-hidden popup__cart-input--radio" type="radio" name="product-size" value="large" id="filter-large">
-          <label class="popup__cart-label" for="filter-large">l</label>
+        <li class="popup-cart__item">
+          <input class="visually-hidden popup-cart__input-radio" type="radio" name="product-size" value="large" id="filter-large">
+          <label class="popup-cart__label" for="filter-large">l</label>
         </li>
       </ul>
-      <button class="popup__cart-button button" aria-label="Добавить в корзину">Добавить</button>
+      <button class="popup-cart__button button" aria-label="Добавить в корзину">Добавить</button>
     </form>
   </div>
 </section>

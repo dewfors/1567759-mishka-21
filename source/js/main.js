@@ -15,8 +15,8 @@ navToggle.addEventListener('click', function () {
 
 const addToCartLinkTopLeader = document.querySelector('.week-top-leader__button');
 const addToCartLinks = document.querySelectorAll('.button--control');
-const addToCartPopup = document.querySelector('.popup__cart');
-const addToCartClose = document.querySelector('.popup__cart-button');
+const addToCartPopup = document.querySelector('.popup-cart');
+const addToCartClose = document.querySelector('.popup-cart__button');
 
 // console.log(addToCartLinkTopLeader);
 // console.log(addToCartLinks);

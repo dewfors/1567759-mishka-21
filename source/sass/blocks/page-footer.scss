@@ -60,16 +60,16 @@
   justify-content: center;
 }
 
-.page-footer__copyright-box {
-  width: 182px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-
-  @media (min-width: $tablet-width) {
-    padding-top: 0;
-  }
-}
+//.page-footer__copyright-box {
+//  width: 182px;
+//  display: flex;
+//  justify-content: space-between;
+//  align-items: center;
+//
+//  @media (min-width: $tablet-width) {
+//    padding-top: 0;
+//  }
+//}
 
 .page-footer__icon-copyright {
   width: 50px;

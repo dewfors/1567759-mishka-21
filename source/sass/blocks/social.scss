@@ -30,9 +30,22 @@
 
 .social__link {
   //height: inherit;
+  //width: 22px;
   padding-top: 5px;
 
   @media (min-width: $tablet-width) {
     padding-top: 10px;
   }
+}
+
+.social__link--insta {
+  width: 22px;
+}
+
+.social__link--fb {
+  width: 15px;
+}
+
+.social__link--twitter {
+  width: 23px;
 }

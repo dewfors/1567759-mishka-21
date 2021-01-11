@@ -23,13 +23,6 @@
 
   @media (min-width: $tablet-width) {
     padding-bottom: 15px;
-    //background-image: url("../img/bg-review-tablet.jpg");
-    //background-repeat: no-repeat;
-    //background-position: left center;
-    //
-    //@media (min-resolution: 2dppx) {
-    //  background-image: url("../img/bg-review-tablet@2x.jpg");
-    //}
   }
 
   @media (min-width: $desktop-width) {
@@ -68,14 +61,6 @@
     grid-template-areas:
       "header button"
       "article article";
-
-    //background-image: url("../img/bg-review-tablet.jpg");
-    //background-repeat: no-repeat;
-    //background-position: left center;
-    //
-    //@media (min-resolution: 2dppx) {
-    //  background-image: url("../img/bg-review-tablet@2x.jpg");
-    //}
   }
 
   @media (min-width: $desktop-width) {

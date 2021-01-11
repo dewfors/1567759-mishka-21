@@ -148,18 +148,28 @@
 }
 
 .contacts__key {
+  color: $greyish;
+
+  @include font(14px, 30px, 400);
+
   @media (min-width: $tablet-width) {
     @include font(17px, 30px, 400);
   }
 }
 
 .contacts__value {
+  color: $greyish;
+
+  @include font(14px, 30px, 400);
+
   @media (min-width: $tablet-width) {
     @include font(17px, 30px, 400);
   }
 }
 
 .contacts__address {
+  color: $greyish;
+
   @media (min-width: $tablet-width) {
     @include font(17px, 30px, 400);
   }

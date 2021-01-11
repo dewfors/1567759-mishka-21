@@ -99,7 +99,9 @@
 }
 
 .contacts__map {
+  max-height: 455px;
   margin: 0 -30px 42px;
+  overflow: hidden;
 
   @media (min-width: $tablet-width) {
     margin-left: -50px;
@@ -124,6 +126,11 @@
     height: 100%;
   }
 }
+
+.contacts__map-iframe {
+  width: 100%;
+}
+
 
 .contacts__write {
   margin: 0 auto;

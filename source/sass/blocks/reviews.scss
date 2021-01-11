@@ -23,6 +23,26 @@
 
   @media (min-width: $tablet-width) {
     padding-bottom: 15px;
+    //background-image: url("../img/bg-review-tablet.jpg");
+    //background-repeat: no-repeat;
+    //background-position: left center;
+    //
+    //@media (min-resolution: 2dppx) {
+    //  background-image: url("../img/bg-review-tablet@2x.jpg");
+    //}
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 10px;
+    background-position: 50px center;
+  }
+}
+
+.reviews__box {
+  @media (min-width: $tablet-width) {
+    margin-left: -50px;
+    padding-left: 50px;
+
     background-image: url("../img/bg-review-tablet.jpg");
     background-repeat: no-repeat;
     background-position: left center;
@@ -33,8 +53,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-bottom: 10px;
-    background-position: 50px center;
+    margin-left: 0;
+    padding-left: 0;
   }
 }
 
@@ -48,6 +68,14 @@
     grid-template-areas:
       "header button"
       "article article";
+
+    //background-image: url("../img/bg-review-tablet.jpg");
+    //background-repeat: no-repeat;
+    //background-position: left center;
+    //
+    //@media (min-resolution: 2dppx) {
+    //  background-image: url("../img/bg-review-tablet@2x.jpg");
+    //}
   }
 
   @media (min-width: $desktop-width) {

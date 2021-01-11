@@ -87,7 +87,7 @@
 .contacts__link {
   color: $greyish;
   border-bottom: 1px solid $green;
-  display: block;
+  display: inline-block;
 
   &:hover {
     color: $greenlight;
